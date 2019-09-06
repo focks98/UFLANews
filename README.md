@@ -24,11 +24,11 @@ Habilidades: programador de Python, Java e C++. Conhecimento básico em desenvol
 
 ##### Heuller Soares Vilela Silva - Scrum Team
 
-Habilidades:
+Habilidades: 
 
 ##### Lorena Kerollen Botelho Tavares - Scrum Team
 
-Habilidades:
+Habilidades: conhecimento em C++, Python, Java. Conhecimento básico em desenvolvimento web.
 
 ##### Rodrigo Pinto Herculano - Scrum Master
 
