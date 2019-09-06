@@ -24,7 +24,7 @@ Habilidades: programador de Python, Java e C++. Conhecimento básico em desenvol
 
 ##### Heuller Soares Vilela Silva - Scrum Team
 
-Habilidades: 
+Habilidades: programador com conhecimentos na linguagem Python. Possui entendimento básico acerca de tecnologias web e mobile.
 
 ##### Lorena Kerollen Botelho Tavares - Scrum Team
 
