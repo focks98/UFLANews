@@ -13,7 +13,3 @@ Para tentar solucionar esse problema será desenvolvido um aplicativo de notíci
 As funcionalidades e requisitos do aplicativo serão apresentadas no documento de requisitos, que estará pronto em breve (20/09/2019).
 
 #### Membros
-
-
-
-Copyright (c) 2018 Felipe Ferreira Carvalho Silva, Lorena Kerollen Botelho Tavares, Rodrigo Pinto Herculano
