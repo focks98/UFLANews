@@ -1,6 +1,6 @@
 # UFLANews
 
-### Motivação
+#### Motivação
 
 Este projeto está sendo desenvolvido a partir dos requisitos solicitados pelo professor Silvio Torra, que trabalha com a parte de assessoria de comunicações na UFLA. Existem dois problemas em questão, o primeiro é que muitos docentes reclamam que recebem muitas notícias que não são de seu interesse. A partir disso, o segundo problema é gerado, pois como diversas notícias são enviadas, muitas vezes os e-mails que realmente importam pra aquela pessoa não são entregues, ou acabam sendo descartados, pois foram confundidos como spam.
 
