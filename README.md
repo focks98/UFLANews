@@ -36,4 +36,4 @@ Habilidades:
 
 ##### William Davi Coelho - Scrum Team
 
-Habilidades:
+Habilidades: conhecimentos com linguagens de programação como Python,Java, C++. Pouco conhecimento em programação web.
