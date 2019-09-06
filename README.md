@@ -13,3 +13,7 @@ Para tentar solucionar esse problema será desenvolvido um aplicativo de notíci
 As funcionalidades e requisitos do aplicativo serão apresentadas no documento de requisitos, que estará pronto em breve (20/09/2019).
 
 #### Membros
+
+##### Álvaro Martins Espíndola
+
+Habilidades: programador de NodeJs, Java, Python e C/C++. Pouco conhecimento em front-end, preferindo, portanto, o back.
