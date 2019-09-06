@@ -32,7 +32,7 @@ Habilidades: conhecimento em C++, Python, Java. Conhecimento básico em desenvol
 
 ##### Rodrigo Pinto Herculano - Scrum Master
 
-Habilidades:
+Habilidades: certo conhecimento e experiência com Java, Python, C++. Algum conhecimento básico de programação web.
 
 ##### William Davi Coelho - Scrum Team
 
