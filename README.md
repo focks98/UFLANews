@@ -20,7 +20,7 @@ Habilidades: programador de NodeJs, Java, Python e C/C++. Pouco conhecimento em 
 
 ##### Felipe Ferreira Carvalho Silva - PO
 
-Habilidades: 
+Habilidades: programador de Python, Java e C++. Conhecimento básico em desenvolvimento back-end e front-end. Experiência em levantamento e definição de requisitos adquirida na matéria Engenharia de software.
 
 ##### Heuller Soares Vilela Silva - Scrum Team
 
