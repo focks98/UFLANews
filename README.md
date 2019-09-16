@@ -6,7 +6,7 @@ Este projeto está sendo desenvolvido a partir dos requisitos solicitados pelo p
 
 ### Objetivos
 
-Para tentar solucionar esse problema será desenvolvido um aplicativo de notícias da UFLA (UFLANews). O mesmo deverá apresentar um feed principal com diversos publicadores de boletins eletrònicos, como exemplo, o restaurante universitário (RU), a Pró-reitoria de Graduação (PRG), dentre outras. O objetivo é que o usuário consiga se inscrever nesses publicadores para poder receber notícias somente daqueles temas que lhe interessem, resolvendo assim, o problema em questão.
+Para tentar solucionar esse problema será desenvolvido um aplicativo de notícias da UFLA (UFLANews). O mesmo deverá apresentar um feed principal com diversos publicadores de boletins eletrônicos, como exemplo, o restaurante universitário (RU), a Pró-reitoria de Graduação (PRG), dentre outras. O objetivo é que o usuário consiga se inscrever nesses publicadores para poder receber notícias somente daqueles temas que lhe interessem, resolvendo assim, o problema em questão.
 
 ### Funcionalidades
 
