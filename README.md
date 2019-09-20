@@ -14,7 +14,7 @@ Para tentar solucionar esse problema será desenvolvido um aplicativo de notíci
 
 ### Funcionalidades
 
-![Documento de requisitos do aplicativo](https://github.com/focks98/UFLANews/issues)
+[Documento de requisitos do aplicativo](https://github.com/focks98/UFLANews/issues)
 
 ### Membros
 
