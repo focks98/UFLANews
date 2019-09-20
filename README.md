@@ -10,7 +10,7 @@ Para tentar solucionar esse problema será desenvolvido um aplicativo de notíci
 
 ### Funcionalidades
 
-As funcionalidades e requisitos do aplicativo serão apresentadas no documento de requisitos, que estará pronto em breve (20/09/2019).
+![Documento de requisitos do aplicativo](https://github.com/focks98/UFLANews/issues)
 
 ### Membros
 
@@ -37,3 +37,7 @@ Habilidades: certo conhecimento e experiência com Java, Python, C++. Algum conh
 ##### William Davi Coelho - Scrum Team
 
 Habilidades: conhecimentos com linguagens de programação como Python,Java, C++. Pouco conhecimento em programação web.
+
+### Links úteis
+
+![Diagrama de casos de uso do aplicativo](https://github.com/focks98/UFLANews/blob/master/casoDeUso.png)
