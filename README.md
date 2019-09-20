@@ -8,6 +8,10 @@ Este projeto está sendo desenvolvido a partir dos requisitos solicitados pelo p
 
 Para tentar solucionar esse problema será desenvolvido um aplicativo de notícias da UFLA (UFLANews). O mesmo deverá apresentar um feed principal com diversos publicadores de boletins eletrônicos, como exemplo, o restaurante universitário (RU), a Pró-reitoria de Graduação (PRG), dentre outras. O objetivo é que o usuário consiga se inscrever nesses publicadores para poder receber notícias somente daqueles temas que lhe interessem, resolvendo assim, o problema em questão.
 
+### Diagrama de Caso de Uso
+
+![Diagrama de casos de uso do aplicativo](https://github.com/focks98/UFLANews/blob/master/casoDeUso.png)
+
 ### Funcionalidades
 
 ![Documento de requisitos do aplicativo](https://github.com/focks98/UFLANews/issues)
@@ -38,6 +42,3 @@ Habilidades: certo conhecimento e experiência com Java, Python, C++. Algum conh
 
 Habilidades: conhecimentos com linguagens de programação como Python,Java, C++. Pouco conhecimento em programação web.
 
-### Links úteis
-
-![Diagrama de casos de uso do aplicativo](https://github.com/focks98/UFLANews/blob/master/casoDeUso.png)
