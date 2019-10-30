@@ -1,0 +1,82 @@
+{
+    "boletins": [
+        {
+            "id": 1,
+            "id_publicador": 1,
+            "publishedAt": "01/08/1990 00:00:01",
+            "title": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+        },
+        {
+            "id": 1,
+            "id_publicador": 2,
+            "publishedAt": "01/08/1990 00:00:01",
+            "title": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+        },
+        {
+            "id": 1,
+            "id_publicador": 3,
+            "publishedAt": "01/08/1990 00:00:01",
+            "title": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+        },
+        {,
+
+            "id": 1,
+            "id_publicador": 4,
+            "publishedAt": "01/08/1990 00:00:01",
+            "title": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "name": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+        }
+    ],
+    "publicador": [
+        {
+            "id": 1,
+            "nome": "Teste",
+            "thumbnail": "file:/Teste/Imagem"
+        }
+    ],
+    "likes": [
+        {
+            "id": 1,
+            "id_usuario": 1,
+            "id_boletim": 1,
+            "likeable_type": 0
+        }
+    ],
+    "publicadores_inscritos": [
+        {
+            "id": 1,
+            "id_usuario": 1,
+            "id_publicador": 1
+        }
+    ],
+    "sections": [
+        {
+            "id": 1,
+            "id_boletim": 1,
+            "title": "Teste",
+            "content": "Teste",
+            "image": "file:/Teste/Imagem"
+        }
+    ],
+    "comment": [
+        {
+            "id": 1,
+            "id_boletim": 1,
+            "id_usuario": 1,
+            "publishedAt": "01/08/1990 00:00:01",
+            "content": "Teste"
+        }
+    ]
+
+}
