@@ -1,6 +1,19 @@
-<ion-content class="ion-padding background_menu">
-  <img class="img_logo" src="assets/icon/logo_ufla.png" />
-  <ion-button (click)="login()" expand="block" color="warning">Entrar</ion-button>
+
+<img class="img_logo" src="assets/icon/logo2_ufla.png" />
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="login()" expand="block" color="tertiary">Entrar</ion-button>
   <div class="ion-text-center ion-padding-vertical">Não possui uma conta ainda?</div>
-  <ion-button expand="block" fill='outline' routerLink="/register" routerDirection="forward" color="dark">Criar conta</ion-button>
+  <ion-button expand="block" fill='outline' routerLink="/register" routerDirection="forward" color="tertiary">Criar conta</ion-button>
 </ion-content>

@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-toolbar color="dark">
+  <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/news"></ion-back-button>
     </ion-buttons>
-    <ion-title>desgraça</ion-title>
+    <ion-title>Detalhes</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -44,5 +44,5 @@
   </ion-card>
 </ion-content>
 <ion-footer *ngIf="currentNews">
-  <ion-button color="warning" expand="block" href="{{currentNews.link}}" target="_blank">Ler mais...</ion-button>
+  <ion-button color="tertiary" expand="block" href="{{currentNews.link}}" target="_blank">Ler mais...</ion-button>
 </ion-footer>

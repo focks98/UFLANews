@@ -9,7 +9,8 @@ const routes: Routes = [
   },
   { path: 'details/:id', canActivate: [AuthGuard], loadChildren: './pages/news-detail/news-detail.module#NewsDetailPageModule' },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
+  { path: 'inicial', loadChildren: './pages/inicial/inicial.module#InicialPageModule' }
 ];
 @NgModule({
   imports: [
