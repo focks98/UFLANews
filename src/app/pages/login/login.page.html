@@ -4,6 +4,7 @@
 <ion-content class="ion-padding">
   <ion-list>
     <ion-item>
+      <br><br><br><br>
       <ion-label position="stacked">Email</ion-label>
       <ion-input [(ngModel)]="email"></ion-input>
     </ion-item>
@@ -13,7 +14,12 @@
     </ion-item>
   </ion-list>
 
+  <br><br>
   <ion-button (click)="login()" expand="block" color="tertiary">Entrar</ion-button>
-  <div class="ion-text-center ion-padding-vertical">Não possui uma conta ainda?</div>
-  <ion-button expand="block" fill='outline' routerLink="/register" routerDirection="forward" color="tertiary">Criar conta</ion-button>
+
+  <br>
+  <ion-button expand="block" fill='solid' routerLink="/inicial" routerDirection="backward" color="danger">
+    Cancelar
+  </ion-button>
+
 </ion-content>

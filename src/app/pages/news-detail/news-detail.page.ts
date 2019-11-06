@@ -72,4 +72,13 @@ export class NewsDetailPage implements OnInit {
     }
     this.currentNews = await this.newsService.update(this.currentNews);
   }
+
+  async handleCommentsVisibility() {
+    if (document.getElementById("comments").style.display == "none") {
+      document.getElementById("comments").style.display = "block";
+    }
+    else {
+      document.getElementById("comments").style.display = "none";
+    }
+  }
 }

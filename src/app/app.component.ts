@@ -31,7 +31,7 @@ export class AppComponent {
         if (state) {
           this.router.navigate(['/tabs/news']);
         } else {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/inicial']);
         }
       });
     });

@@ -3,9 +3,6 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <ion-searchbar showCancelButton="focus" placeholder="Encontrar notícias" (ionChange)="updateListNews($event)">
-  </ion-searchbar>
-
   <ion-card *ngFor="let news of lstNews" [routerLink]="['/details', news.id]">
     <img src="{{news.image}}" />
     <ion-card-header>
@@ -13,6 +10,6 @@
         {{news.title}}
       </ion-card-title>
       <ion-card-subtitle>{{news.likes | likes}} likes | {{news.publishedAt | timeAgo}}</ion-card-subtitle>
-    </ion-card-header>    
+    </ion-card-header>
   </ion-card>
 </ion-content>

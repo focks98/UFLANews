@@ -20,6 +20,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'search',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/search/search.module').then(m => m.SearchPageModule)
+          }
+        ]
+      },
+      {
         path: 'favorites',
         children: [
           {

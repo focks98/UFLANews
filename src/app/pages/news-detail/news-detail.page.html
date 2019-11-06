@@ -15,34 +15,49 @@
       </ion-card-title>
       <ion-card-subtitle>{{currentNews.publishedAt | timeAgo}}</ion-card-subtitle>
     </ion-card-header>
-    <img src="{{currentNews.image}}" />
+    
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-tab-button>
-            <ion-icon name="heart" *ngIf="likeId" (click)="handleLike()"  color="primary"></ion-icon>
+            <ion-icon name="heart" *ngIf="likeId" (click)="handleLike()"  color="danger"></ion-icon>
             <ion-icon name="heart" *ngIf="!likeId" (click)="handleLike()"></ion-icon>
             <ion-label>{{currentNews.likes | likes}} likes</ion-label>
           </ion-tab-button>
-          <ion-tab-button *ngIf="starId"  (click)="handleFavorite()">
-            <ion-icon name="star" color="primary"></ion-icon>
-            <ion-label>Favoritada</ion-label>
-          </ion-tab-button>
-          <ion-tab-button *ngIf="!starId"  (click)="handleFavorite()">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-label>Favoritar</ion-label>
-          </ion-tab-button>
-          <ion-tab-button (click)="shareWhatsApp()">
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <ion-label>Compartilhar</ion-label>
-          </ion-tab-button>
+
         </ion-row>
       </ion-grid>
-
-      <div class="ion-text-justify">{{currentNews.content}}</div>
+      
+   <img src="{{currentNews.image}}"/>
+      <div class="ion-text-justify" >{{currentNews.content}}</div>
+      <!-- <ion-tab-button *ngIf="starId"  (click)="handleFavorite()">
+          <ion-icon name="chatbubbles" color="primary"></ion-icon>
+          <ion-label>Comentada</ion-label>
+      </ion-tab-button>
+      <ion-tab-button *ngIf="!starId"  (click)="handleFavorite()">
+        <ion-icon name="chatbubbles"></ion-icon>
+        <ion-label>Comentar</ion-label>
+      </ion-tab-button> -->
     </ion-card-content>
   </ion-card>
 </ion-content>
-<ion-footer *ngIf="currentNews">
-  <ion-button color="tertiary" expand="block" href="{{currentNews.link}}" target="_blank">Ler mais...</ion-button>
+
+<!-- id="imagem" style="display:none" -->
+
+<!-- <ion-text id="comments" style="display:none">
+  COMENTAŔIO
+  <br>
+</ion-text> -->
+
+<!-- <ion-input id="comments" style="display:none">Seu comentário</ion-input> -->
+
+<div id="comments" style="display:none">
+  <ion-input placeholder="Digite seu comentário"></ion-input>
+</div>
+
+<ion-footer style="background-color:#1a691a;">
+  <ion-tab-button (click)="handleCommentsVisibility()">
+      <ion-icon name="chatbubbles" color="light"></ion-icon>
+      <ion-label color="light">Comentários</ion-label>
+  </ion-tab-button>
 </ion-footer>

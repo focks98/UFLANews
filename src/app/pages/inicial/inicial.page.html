@@ -1,7 +1,15 @@
-<ion-content class="ion-padding background_menu">
+<ion-content class="ion-padding-center background_menu">
   <img class="img_logo" src="assets/icon/logo_ufla.png" />
+</ion-content>
 
-  <ion-button (click)="login()" expand="block" color="warning">Entrar</ion-button>
-  <div class="ion-text-center ion-padding-vertical">Não possui uma conta ainda?</div>
-  <ion-button expand="block" fill='outline' routerLink="/register" routerDirection="forward" color="dark">Criar conta</ion-button>
+<ion-content class="ion-padding background_menu">
+  <ion-button expand="block" color="warning" routerLink="/login" routerDirection="forward" color="success" type="round">
+    Entrar
+  </ion-button>
+
+  <br>
+
+  <ion-button expand="block" fill='solid' routerLink="/register" routerDirection="forward" color="success">
+    Cadastrar
+  </ion-button>
 </ion-content>
