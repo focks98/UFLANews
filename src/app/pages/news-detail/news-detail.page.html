@@ -3,53 +3,41 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/news"></ion-back-button>
     </ion-buttons>
-    <ion-title>Detalhes</ion-title>
+    <ion-title>Boletim</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card *ngIf="currentNews">
     <ion-card-header>
-      <ion-card-title>
-        {{currentNews.title}}
-      </ion-card-title>
-      <ion-card-subtitle>{{currentNews.publishedAt | timeAgo}}</ion-card-subtitle>
-    </ion-card-header>
-    
-    <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-tab-button>
-            <ion-icon name="heart" *ngIf="likeId" (click)="handleLike()"  color="danger"></ion-icon>
-            <ion-icon name="heart" *ngIf="!likeId" (click)="handleLike()"></ion-icon>
-            <ion-label>{{currentNews.likes | likes}} likes</ion-label>
-          </ion-tab-button>
-
+          <ion-col>
+            <ion-card-title>
+              {{currentNews.title}}
+            </ion-card-title>
+            <ion-card-subtitle>{{currentNews.publishedAt | timeAgo}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row align-self-end>
+          <ion-col size="9"></ion-col>
+          <ion-col>
+            <ion-tab-button>
+              <ion-icon name="heart" *ngIf="likeId" (click)="handleLike()" color="danger" ></ion-icon>
+              <ion-icon name="heart" *ngIf="!likeId" (click)="handleLike()"></ion-icon>
+              <ion-label>{{currentNews.likes | likes}}</ion-label>
+            </ion-tab-button>
+          </ion-col>
         </ion-row>
       </ion-grid>
-      
-   <img src="{{currentNews.image}}"/>
+      <img src="{{currentNews.image}}"/>
+    </ion-card-header>
+
+    <ion-card-content>
       <div class="ion-text-justify" >{{currentNews.content}}</div>
-      <!-- <ion-tab-button *ngIf="starId"  (click)="handleFavorite()">
-          <ion-icon name="chatbubbles" color="primary"></ion-icon>
-          <ion-label>Comentada</ion-label>
-      </ion-tab-button>
-      <ion-tab-button *ngIf="!starId"  (click)="handleFavorite()">
-        <ion-icon name="chatbubbles"></ion-icon>
-        <ion-label>Comentar</ion-label>
-      </ion-tab-button> -->
     </ion-card-content>
   </ion-card>
 </ion-content>
-
-<!-- id="imagem" style="display:none" -->
-
-<!-- <ion-text id="comments" style="display:none">
-  COMENTAŔIO
-  <br>
-</ion-text> -->
-
-<!-- <ion-input id="comments" style="display:none">Seu comentário</ion-input> -->
 
 <div id="comments" style="display:none">
   <ion-input placeholder="Digite seu comentário"></ion-input>

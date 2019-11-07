@@ -8,6 +8,7 @@ import { FavoriteModel, FavoriteTypeModel } from 'src/app/model/favorite.model';
 import { UserModel } from 'src/app/model/user.model';
 import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/user.service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-news-detail',
@@ -28,7 +29,8 @@ export class NewsDetailPage implements OnInit {
     public newsService: NewsService,
     public favoritesService: FavoritesService,
     public authService: AuthService,
-    public userService: UserService) {
+    public userService: UserService,
+    public alertController: AlertController) {
   }
 
   async ngOnInit() {
@@ -62,10 +64,12 @@ export class NewsDetailPage implements OnInit {
 
   async handleLike() {
     if (!this.likeId) {
+      this.likeAlert();
       let favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.LIKE);
       this.likeId = await this.favoritesService.add(favorite);
       this.currentNews.likes += 1;
     } else {
+      this.dislikeAlert();
       await this.favoritesService.delete(this.likeId);
       this.likeId = null;
       this.currentNews.likes -= 1;
@@ -81,4 +85,21 @@ export class NewsDetailPage implements OnInit {
       document.getElementById("comments").style.display = "none";
     }
   }
+
+  async likeAlert() {
+    const alert = await this.alertController.create({
+      message: 'Like atribuído com sucesso!',
+      buttons: ['OK']
+    });
+    await alert.present();
+  }
+
+  async dislikeAlert() {
+    const alert = await this.alertController.create({
+      message: 'Like retirado com sucesso!',
+      buttons: ['OK']
+    });
+    await alert.present();
+  }
+
 }
