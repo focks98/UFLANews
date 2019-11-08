@@ -16,6 +16,8 @@ Para tentar solucionar esse problema será desenvolvido um aplicativo de notíci
 
 [Documento de requisitos do aplicativo](https://github.com/focks98/UFLANews/issues)
 
+[Protótipo de Interface Gráfica](https://xd.adobe.com/view/865f717c-b578-4943-5cb5-0d598f6f5baf-f06e/)
+
 ### Membros
 
 ##### Álvaro Martins Espíndola - Scrum Team
@@ -42,3 +44,30 @@ Habilidades: certo conhecimento e experiência com Java, Python, C++. Algum conh
 
 Habilidades: conhecimentos com linguagens de programação como Python,Java, C++. Pouco conhecimento em programação web.
 
+### Utilização:
+
+Clone o repositório atual: 
+> git clone https://github.com/focks98/UFLANews.git
+
+#### API
+**Instalação:**
+
+Vá para o diretório da **api**.
+Para a instalação da api execute o seguinte comando:
+> npm install
+
+Para corrigir alguns erros de versionamento, talvez, seja necessário executar o comando abaixo:
+> npm audit fix
+
+**Execução:**
+
+Para colocar esta API em funcionamento, execute o comando abaixo:
+> npm run start-auth
+
+#### Aplicativo
+
+Instale os scripts do *framework* Ionic:
+> npm install @ionic/app-scripts@latest --save-dev
+
+Execute o aplicativo:
+>ionic serve
