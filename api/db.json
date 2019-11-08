@@ -1,79 +1,108 @@
 {
-    "boletins": [
+    "news": [
         {
-            "id": 1,
-            "id_publicador": 1,
-            "publishedAt": "01/08/1990 00:00:01",
-            "title": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
+          "id": 1,
+          "title": "MAMUTE em manutenção",
+          "likes": 2001,
+          "publishedAt": "18/05/2019 14:21:00",
+          "image": "http://www.ufla.br/dcom/wp-content/uploads/2016/01/volta_as_aulas_mamute.jpg",
+          "content": "A Pró-Reitoria de Infraestrutura da Universidade Federal de Lavras (Proinfra/UFLA) comunica à comunidade acadêmica que o ônibus interno articulado (“Mamute”) deixará de circular, por uma semana, a partir da próxima sexta-feira (18/5). O veículo passará por manutenção nesse período, o que é essencial à qualidade do serviço de transporte prestado."
         },
         {
-            "id": 1,
-            "id_publicador": 2,
-            "publishedAt": "01/08/1990 00:00:01",
-            "title": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
-        },
+          "id": 2,
+          "title": "Congressos da UFLA iniciam segunda-feira (4/11): confira a programação e participe" ,
+          "likes": 5002,
+          "publishedAt": "09/04/2019 19:02:00",
+          "image": "https://ufla.br/images/noticias/2019/10_out/WhatsApp_Image_2019-10-31_at_08.09.29.jpeg",
+          "content": "O Grupo Coimbra de Universidades Brasileiras (GCUB), em parceria com a Universidade Federal do Amazonas (Ufam), realizou nesta semana, entre 28 e 31 de outubro, a XII Assembleia Geral do Grupo Coimbra de Universidades Brasileiras e o XI Seminário Internacional do Grupo Coimbra de Universidades Brasileiras. A Universidade Federal de Lavras (UFLA) esteve representada no evento pelo professor Márcio Machado Ladeira, assessor do reitor. "
+          },
         {
-            "id": 1,
-            "id_publicador": 3,
-            "publishedAt": "01/08/1990 00:00:01",
-            "title": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
-        },
-        {,
-
-            "id": 1,
-            "id_publicador": 4,
-            "publishedAt": "01/08/1990 00:00:01",
-            "title": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
-
+          "id": 3,
+          "title": "V Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico ",
+          "likes": 12,
+          "publishedAt": "09/02/2019 18:23:00",
+          "image": "https://ufla.br/images/noticias/2019/selos/oportunidade.jpg",
+          "content": "Entre os dias 28 e 30 de abril de 2020, o V Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (V CIM) ocorrerá na UFLA. A temática será: Inclusão, permanência e sucesso: como inovar para alcançar cada estudante?"
         }
-    ],
-    "usuarios": [
+      ],
+      "users": [
         {
-            "id": 1,
-            "name": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
+          "id": 1,
+          "name": "Paulo",
+          "email": "paulo@paulo.com",
+          "image":""
+        },
+        {
+          "name": "jose",
+          "email": "jose@jose.com",
+          "id": 2,
+          "image":""
+        },
+        {
+          "name": "tadeu",
+          "email": "tadeu@tadeu.com",
+          "id": 3,
+          "image":""
+        },
+        {
+          "name": "rodrigo",
+          "email": "rodrigo@rodrigo.com",
+          "id": 4,
+          "image":""
+        },
+        {
+          "name": "rodrigo",
+          "email": "rodrigo@rodrigo.com",
+          "id": 5,
+          "image":""
         }
-    ],
-    "publicador": [
+      ],
+    "publisher": [
         {
             "id": 1,
-            "nome": "Teste",
-            "thumbnail": "file:/Teste/Imagem"
+            "name": "Restaurante Universitário",
+            "image": ""
+        },
+        {
+            "id": 2,
+            "name": "PRG",
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "PRP",
+            "image": ""
         }
     ],
     "likes": [
         {
             "id": 1,
-            "id_usuario": 1,
-            "id_boletim": 1,
+            "id_user": 1,
+            "id_news": 1,
             "likeable_type": 0
         }
     ],
-    "publicadores_inscritos": [
+    "subscribed_publishers": [
         {
             "id": 1,
-            "id_usuario": 1,
-            "id_publicador": 1
+            "id_user": 1,
+            "id_publisher": 1
         }
     ],
     "sections": [
         {
             "id": 1,
-            "id_boletim": 1,
+            "id_news": 1,
             "title": "Teste",
             "content": "Teste",
             "image": "file:/Teste/Imagem"
         }
     ],
-    "comment": [
+    "comments": [
         {
             "id": 1,
-            "id_boletim": 1,
-            "id_usuario": 1,
+            "id_news": 1,
+            "id_user": 1,
             "publishedAt": "01/08/1990 00:00:01",
             "content": "Teste"
         }
