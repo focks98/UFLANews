@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
   { path: 'inicial', loadChildren: './pages/inicial/inicial.module#InicialPageModule' },
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
-  { path: 'my-account', loadChildren: './pages/my-account/my-account.module#MyAccountPageModule' }
+  { path: 'my-account', loadChildren: './pages/my-account/my-account.module#MyAccountPageModule' },  { path: 'edit', loadChildren: './pages/edit/edit.module#EditPageModule' }
+
 ];
 @NgModule({
   imports: [

@@ -11,8 +11,16 @@
 
 <ion-content class="ion-padding">
   <ion-list *ngIf="user">
-    <ion-text>
-        Nome: {{user.name}}
-    </ion-text>
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-text> {{user.name}} </ion-text>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-text> {{user.email}} </ion-text>
+    </ion-item>
   </ion-list>
+  <br><br>
+  <ion-button routerLink="/edit" expand="block" color="tertiary">Editar Conta</ion-button>
 </ion-content>
