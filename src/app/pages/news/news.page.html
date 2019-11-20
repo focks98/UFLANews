@@ -3,13 +3,44 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <ion-card *ngFor="let news of lstNews" [routerLink]="['/details', news.id]">
-    <img src="{{news.image}}" />
+  <ion-card *ngFor="let publisher of listPublishers">
     <ion-card-header>
-      <ion-card-title>
-        {{news.title}}
-      </ion-card-title>
-      <ion-card-subtitle>{{news.likes | likes}} likes | {{news.publishedAt | timeAgo}}</ion-card-subtitle>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            <img src="{{publisher.thumbnail}}"/>
+          </ion-col>
+          <ion-col size="7">
+            <br>
+            <ion-label>{{publisher.name}}</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-header>
+
+    <ion-card *ngFor="let news of lstNews" [routerLink]="['/details', news.id]">
+      <ion-grid>
+        <ion-row>
+          <img src="{{news.image}}" class="img_news"/>
+        </ion-row>
+      </ion-grid>
+      <ion-card-header>
+        <ion-card-title>
+          {{news.title}}
+        </ion-card-title>
+        <ion-card-subtitle>{{news.publishedAt | timeAgo}}</ion-card-subtitle>
+        <ion-grid>
+          <ion-row>
+            <ion-col></ion-col>
+            <ion-card-subtitle>
+              <ion-tab-button>
+                <ion-icon name="heart" color="danger"></ion-icon>
+                <ion-label>{{news.likes | likes}} likes</ion-label>
+              </ion-tab-button>
+            </ion-card-subtitle>
+          </ion-row>
+        </ion-grid>
+      </ion-card-header>
+    </ion-card>
   </ion-card>
 </ion-content>

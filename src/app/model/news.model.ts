@@ -6,6 +6,6 @@ export class NewsModel {
         public publishedAt: Date,
         public image: string,
         public content: string,
-        public link: string     
+        public link: string
     ) {}
-} 
+}

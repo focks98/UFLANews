@@ -10,8 +10,8 @@ const API_URL: string = "http://localhost:8000";
 @Injectable({
   providedIn: 'root'
 })
-export class NewsService {
 
+export class NewsService {
 
   constructor(public http: HttpClient, public authService: AuthService) { }
 
