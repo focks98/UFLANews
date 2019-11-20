@@ -36,7 +36,7 @@ export class NewsService {
           (item: NewsModel) => {
             return new NewsModel(
               item.id, item.title, item.likes, item.publishedAt,
-              item.image, item.content, item.link);
+              item.image, item.content, item.id_publisher);
           }
         )
       }
@@ -50,7 +50,7 @@ export class NewsService {
       (item: NewsModel) => {
         return new NewsModel(
           item.id, item.title, item.likes, item.publishedAt,
-          item.image, item.content, item.link);
+          item.image, item.content, item.id_publisher);
       }
     ).toPromise();
   }
@@ -71,7 +71,7 @@ export class NewsService {
           (item: NewsModel) => {
             return new NewsModel(
               item.id, item.title, item.likes, item.publishedAt,
-              item.image, item.content, item.link);
+              item.image, item.content, item.id_publisher);
           }
         )
       }
@@ -85,7 +85,7 @@ export class NewsService {
       (item: NewsModel) => {
         return new NewsModel(
           item.id, item.title, item.likes, item.publishedAt,
-          item.image, item.content, item.link);
+          item.image, item.content, item.id_publisher);
       }
     ).toPromise();
   }

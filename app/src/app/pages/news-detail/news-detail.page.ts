@@ -44,14 +44,6 @@ export class NewsDetailPage implements OnInit {
     this.likeId = await this.favoritesService.getFavoriteId(this.user.id, this.newsId, FavoriteTypeModel.LIKE);
   }
 
-  async shareWhatsApp() {
-    const canShare: boolean = await this.socialSharing.canShareVia('whatsapp');
-    if (canShare) {
-      this.socialSharing.shareViaWhatsApp(this.currentNews.title,
-        this.currentNews.image, this.currentNews.link);
-    }
-  }
-
   async handleFavorite() {
     if (!this.starId) {
       const favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.STAR);
