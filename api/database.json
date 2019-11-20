@@ -1,0 +1,279 @@
+{
+  "users": [
+    {
+      "name": "Lorena",
+      "email": "lorena@lorena.com",
+      "id": 1
+    },
+    {
+      "name": "Felipe",
+      "email": "felipe@felipe.com",
+      "id": 2
+    },
+    {
+      "name": "Rodrigo",
+      "email": "rodrigo@rodrigo.com",
+      "id": 3
+    },
+    {
+      "name": "William",
+      "email": "william@william.com",
+      "id": 4
+    },
+    {
+      "name": "Álvaro",
+      "email": "alvaro@alvaro.com",
+      "id": 5
+    },
+    {
+      "name": "Héuller",
+      "email": "heuller@heuller.com",
+      "id": 6
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Congressos da UFLA iniciam segunda-feira (4/11): confira a programação e participe",
+      "likes": 20002,
+      "publishedAt": "09/04/2019 14:21:00",
+      "image": "https://ufla.br/images/noticias/2019/10_out/CONGRESSOS_2019.jpg",
+      "content": "A Universidade Federal de Lavras (UFLA) promove, entre os dias 4/11 e 8/11, o XXXII Congresso de Iniciação Científica (Ciufla), o XIV Congresso de Extensão (Conex) e XXVIII Congresso da Pós-Graduação, com a temática “Importância da Internacionalização no desenvolvimento das Universidades Brasileiras”.",
+      "id_publisher": 1
+    },
+    {
+      "id": 2,
+      "title": "Posses em outubro: 20 novos servidores passaram a integrar o quadro da UFLA",
+      "likes": 5000002,
+      "publishedAt": "09/04/2019 19:02:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premios_dcc/thumbs/phoca_thumb_m_image001.jpg",
+      "content": "Durante o mês de outubro, vinte novos servidores foram empossados na Universidade Federal de Lavras (UFLA), todos habilitados em concurso público para professores. Preencheram vagas  nos Departamentos de Administração e Economia (DAE), Ciências da Saúde (DAS), Engenharia (DEG), Agricultura (DAG), Biologia (DBI), Direito (DIR), Ciência da Computação (DCC), Química (DQI) e Núcleo de Educação da Infância (Nedi).",
+      "id_publisher": 1
+    },
+    {
+      "id": 3,
+      "title": "Pesquisas da UFLA são premiadas em evento científico",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 1
+    },
+    {
+      "id": 4,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 2
+    },
+    {
+      "id": 5,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 3
+    },
+    {
+      "id": 6,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 3
+    },
+    {
+      "id": 7,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 4
+    },
+    {
+      "id": 8,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 4
+    },
+    {
+      "id": 9,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 5
+    },
+    {
+      "id": 10,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 6
+    },
+    {
+      "id": 11,
+      "title": "MUDAR ESSE BOLETIM",
+      "likes": 13,
+      "publishedAt": "09/02/2019 18:23:00",
+      "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 6
+    }
+  ],
+  "publishers": [
+    {
+      "id": 1,
+      "name": "UFLA",
+      "thumbnail": "https://image.winudf.com/v2/image/YnIuY29tLmNqci5wb3J0YXMzX2ljb25fdGliZGxwZ3Q/icon.png?w=170&fakeurl=1"
+    },
+    {
+      "id": 2,
+      "name": "PRG",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZEfsBHAa4Y54B6Qp03vvGndMfnJzERVj4qQVzCL6GbhBuPTj3aw&s"
+    },
+    {
+      "id": 3,
+      "name": "DCC",
+      "thumbnail": "http://ca.computacao.ufla.br/maratona/img/dcc.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lemaf",
+      "thumbnail": "https://media.licdn.com/dms/image/C4E0BAQFN7zp2W_rQTg/company-logo_200_200/0?e=2159024400&v=beta&t=d4fLj8-JEtcrgkhQWO49ejU7wYqzHTn9n5XmpPMMXFc"
+    },
+    {
+      "id": 5,
+      "name": "Comp Jr",
+      "thumbnail": "https://pbs.twimg.com/profile_images/954367060557074433/SnJBXlgi_400x400.jpg"
+    },
+    {
+      "id": 6,
+      "name": "RU",
+      "thumbnail": "http://www.ufla.br/dcom/wp-content/uploads/2013/02/05.02-RU-jantar-frente.jpg"
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "id_user": 1,
+      "id_news": 1,
+      "likeable_type": 0
+    }
+  ],
+  "favorites": [
+    {
+      "id": 11,
+      "newsId": 1,
+      "userId": 2,
+      "favoriteType": 0
+    },
+    {
+      "id": 14,
+      "newsId": 2,
+      "userId": 2,
+      "favoriteType": 0
+    },
+    {
+      "id": 15,
+      "newsId": 1,
+      "userId": 2,
+      "favoriteType": 1
+    },
+    {
+      "id": 16,
+      "newsId": 2,
+      "userId": 2,
+      "favoriteType": 1
+    },
+    {
+      "id": 19,
+      "newsId": 3,
+      "userId": 1,
+      "favoriteType": 1
+    },
+    {
+      "id": 20,
+      "newsId": 2,
+      "userId": 1,
+      "favoriteType": 1
+    },
+    {
+      "newsId": 1,
+      "userId": 1,
+      "favoriteType": 1,
+      "id": 21
+    }
+  ],
+  "subscribed_publishers": [
+    {
+      "id": 1,
+      "id_user": 1,
+      "id_publisher": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "id_news": 1,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    },
+    {
+      "id": 2,
+      "id_news": 1,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    },
+    {
+      "id": 3,
+      "id_news": 2,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    },
+    {
+      "id": 4,
+      "id_news": 2,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    },
+    {
+      "id": 5,
+      "id_news": 3,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    },
+    {
+      "id": 6,
+      "id_news": 3,
+      "title": "Teste",
+      "content": "Teste",
+      "image": "file:/Teste/Imagem"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "id_news": 1,
+      "id_user": 1,
+      "publishedAt": "01/08/1990 00:00:01",
+      "content": "Teste"
+    }
+  ]
+}
