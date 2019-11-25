@@ -31,34 +31,107 @@
       "id": 6
     }
   ],
-
   "news": [
     {
       "id": 1,
       "title": "Congressos da UFLA iniciam segunda-feira (4/11): confira a programação e participe",
       "likes": 20001,
-      "publishedAt": "09/04/2019 14:21:00",
+      "publishedAt": "11/02/2019 14:21:00",
       "image": "https://ufla.br/images/noticias/2019/10_out/CONGRESSOS_2019.jpg",
-      "content": "A Universidade Federal de Lavras (UFLA) promove, entre os dias 4/11 e 8/11, o XXXII Congresso de Iniciação Científica (Ciufla), o XIV Congresso de Extensão (Conex) e XXVIII Congresso da Pós-Graduação, com a temática “Importância da Internacionalização no desenvolvimento das Universidades Brasileiras”. "
+      "content": "A Universidade Federal de Lavras (UFLA) promove, entre os dias 4/11 e 8/11, o XXXII Congresso de Iniciação Científica (Ciufla), o XIV Congresso de Extensão (Conex) e XXVIII Congresso da Pós-Graduação, com a temática “Importância da Internacionalização no desenvolvimento das Universidades Brasileiras”.",
+      "id_publisher": 1
     },
     {
       "id": 2,
       "title": "Posses em outubro: 20 novos servidores passaram a integrar o quadro da UFLA",
-      "likes": 5000002,
+      "likes": 5000001,
       "publishedAt": "09/04/2019 19:02:00",
       "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premios_dcc/thumbs/phoca_thumb_m_image001.jpg",
-      "content": "Durante o mês de outubro, vinte novos servidores foram empossados na Universidade Federal de Lavras (UFLA), todos habilitados em concurso público para professores. Preencheram vagas  nos Departamentos de Administração e Economia (DAE), Ciências da Saúde (DAS), Engenharia (DEG), Agricultura (DAG), Biologia (DBI), Direito (DIR), Ciência da Computação (DCC), Química (DQI) e Núcleo de Educação da Infância (Nedi)."
+      "content": "Durante o mês de outubro, vinte novos servidores foram empossados na Universidade Federal de Lavras (UFLA), todos habilitados em concurso público para professores. Preencheram vagas  nos Departamentos de Administração e Economia (DAE), Ciências da Saúde (DAS), Engenharia (DEG), Agricultura (DAG), Biologia (DBI), Direito (DIR), Ciência da Computação (DCC), Química (DQI) e Núcleo de Educação da Infância (Nedi).",
+      "id_publisher": 1
     },
     {
       "id": 3,
       "title": "Pesquisas da UFLA são premiadas em evento científico",
       "likes": 13,
-      "publishedAt": "09/02/2019 18:23:00",
+      "publishedAt": "11/20/2019 18:23:00",
       "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premia%C3%A7%C3%A3o_dcc/image003.jpg",
-      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE)."
+      "content": "Duas pesquisas realizadas no Departamento de Ciência da Computação da Universidade Federal de Lavras  (DCC/UFLA) receberam premiação no XVII Simpósio Brasileiro de Qualidade de Software (SBQS), que ocorreu  entre os dias 28/10 a 1º/12, em Fortaleza (CE).",
+      "id_publisher": 1
+    },
+    {
+      "id": 4,
+      "title": "Edital de Notificação de Desligamento por Desempenho Acadêmico Insuficiente e por não Conclusão do Curso no Tempo Máximo de Integralização",
+      "likes": 13,
+      "publishedAt": "10/26/2019 18:42:00",
+      "image": "http://www.ufla.br/dcom/wp-content/uploads/2017/07/predio-pro-reitorias-249x187.jpg",
+      "content": "A Pró-Reitoria de Graduação da Universidade Federal de Lavras, em atendimento aos parágrafos 1º e 2º do Art. 2º da Instrução Normativa PRG Nº 20, de 12 de julho de 2019, torna público o presente Edital para NOTIFICAR os discentes abaixo relacionados referente a abertura de processo de desligamento por infração aos dispositivos previstos no inciso I do Art. 168 e nos incisos do Art. 169 da Resolução CEPE nº 473, de 12 de dezembro de 2018.",
+      "id_publisher": 2
+    },
+    {
+      "id": 5,
+      "title": "PRG e DPGA estão em novo prédio – confira o local",
+      "likes": 13,
+      "publishedAt": "07/18/2019 10:20:00",
+      "image": "http://www.ufla.br/dcom/wp-content/uploads/2016/07/naves-2016-249x166.jpg",
+      "content": "Desde o dia 18/7/2017, a Pró-Reitoria de Graduação (PRG) e a sua Diretoria de Planejamento e Gestão Acadêmica (DPGA) prestam atendimento no novo prédio das pró-reitorias. O edifício, localizado no início da Avenida Sul (próximo ao Pomar da UFLA, ao Centro Administrativo e à Reitoria), possui infraestrutura com mais espaço e comodidade para os servidores e estudantes.",
+      "id_publisher": 2
+    },
+    {
+      "id": 6,
+      "title": "Pós-Graduandos até 20/9/19: Inscrições Monitoria Remunerada.",
+      "likes": 13,
+      "publishedAt": "01/19/2019 18:23:00",
+      "image": "http://www.dcc.ufla.br/wp-content/uploads/2013/08/Dcc.png",
+      "content": "Divulgamos que estão abertas as inscrições para seleção de monitores nível 2 (pós-graduandos) remunerados para (duas) disciplinas do DCC. As inscrições poderão ser realizadas na secretaria do DCC de 16 a 20/09/2019 – Edital 08.2019.",
+      "id_publisher": 3
+    },
+    {
+      "id": 7,
+      "title": "Motivação para além da tela do computador",
+      "likes": 13,
+      "publishedAt": "06/23/2019 11:10:00",
+      "image": "https://fastly.4sqi.net/img/general/width960/47838095_qpIK0lsa4Yk1lxnDSzXFbNOYQNCW1DrA-NV21mUcw4Q.jpg",
+      "content": "O que te deixa motivado? O que faz com que você levante todos os dias pela manhã, pegue seu carro, corra atrás do Autotrans, entre na fila do mamute ou da carona pra chegar no horário? O dinheiro na conta no fim do mês? Alcançar o nível máximo de produtividade? Não receber cobrança do GP da equipe? Se é um dos que se identificou com um desses motivos, essa confissão é especialmente pra você.A motivação vai além de receber elogios, recompensas ou presentinhos do Pará. Vai além de ser bolsista, estagiário ou contratado. A motivação parte de cada um de nós e ela é diária. Ela vem do intuito de querer, fazer e ser a mudança. Ser a mudança e diferença na sua equipe, pois foi pra isso que você foi selecionado, você é diferente! Aqui, ou em qualquer outra empresa que estiver, a motivação será você próprio. Simples assim. O que eu faço? Já fico feliz e agradecida de acordar bem. Tomo uma boa dose de café, espero a carona do meu amigo enrolado e isso faz com que eu me atrase todos os dias pra chegar também. Assim que entro na sala da minha equipe de três pessoas, espero a primeira risadinha ou piada tosca da manhã. Faço o que tenho que fazer nas manhãs, e até as 11h não ouço nada de música. A partir deste horário, pego meu fone roxo maroto e escuto cada dia um tipo de playlist diferente, porque depende do nível de mudança que eu quero causar no dia",
+      "id_publisher": 4
+    },
+    {
+      "id": 8,
+      "title": "Utilização da ferramenta Redmine para auxiliar na certificação MPS-BR Nível F em uma empresa ágil",
+      "likes": 13,
+      "publishedAt": "03/03/2019 18:23:00",
+      "image": "http://blog.ti.lemaf.ufla.br/content/images/2017/09/redmine-rastr.png",
+      "content": "Boa tarde caros Lemafianos,Gostaria de vir aqui hoje dividir uma experiência interessante com vocês.Como muitos de vocês já sabem, em 2016 a GT4W, empresa parceira do LEMAF, obteve a certificação MPS-BR nível F. Essa certificação foi fruto de bastante empenho dos responsáveis pela GT4W e os demais envolvidos no processo. Cerca de dois meses atrás (e quase um ano após a certificação), escrevi um artigo científico relatando a experiência da ferramenta que utilizamos no processo (o Redmine) e submeti ao XVI Simpósio Brasileiro de Qualidade de Software como um relato de experiência. Para minha surpresa o artigo foi aceito e publicado! Apresentei o trabalho no evento e o feedback foi bastante positivo, principalmente pela falta de artigos com experiências práticas na literatura. Com isso, compartilho com vocês um resumo do artigo, detalhando como definimos e utilizamos a ferramenta para auxiliar na implementação de alguns dos processos necessários e como foi o desempenho da ferramenta na prática.",
+      "id_publisher": 4
+    },
+    {
+      "id": 9,
+      "title": "Linkedin comp",
+      "likes": 13,
+      "publishedAt": "10/10/2019 15:12:00",
+      "image": "http://www.dcc.ufla.br/wp-content/uploads/2013/03/LogoComp.png",
+      "content": "Sobre nós, A Comp Júnior é a Empresa Júnior de Tecnologia da Informação da UFLA, formada exclusivamente por alunos de Ciência da Computação, Sistemas de Informação e Engenharia de Controle e Automação. Atuamos no mercado de tecnologia há mais de 16 anos em Lavras e região prestando serviços de criação e manutenção de web sites, desenvolvimento de sistemas de evento online, aplicativos móveis, consultoria em infraestrutura de TI e cursos em diversas áreas.",
+      "id_publisher": 5
+    },
+    {
+      "id": 10,
+      "title": "Restaurante Universitário realiza pesquisa de satisfação sobre seus serviços ",
+      "likes": 13,
+      "publishedAt": "12/11/2019 18:11:34",
+      "image": "https://ufla.br/images/noticias/2019/11_nov/ru-menor.jpg",
+      "content": "O Restaurante Universitário da Universidade Federal de Lavras (RU/UFLA) está realizando pesquisa de satisfação com estudantes, docentes e técnicos que utilizam o serviço. O objetivo é identificar como os usuários avaliam o cardápio oferecido em 2019 e as novas dependências do RU.",
+      "id_publisher": 6
+    },
+    {
+      "id": 11,
+      "title": "Campanha realizada pelo Restaurante Universitário reduz desperdício de alimentos ",
+      "likes": 13,
+      "publishedAt": "02/09/2019 18:23:00",
+      "image": "https://ufla.br/images/noticias/2019/07_jul/sem2.jpg",
+      "content": "A equipe do Restaurante Universitário (RU), vinculada à Pró-reitoria de Assuntos Estudantis e Comunitários (Praec) da Universidade Federal de Lavras (UFLA), tem desenvolvido um projeto para redução do desperdício de alimentos nas refeições oferecidas. A partir de um trabalho contínuo de planejamento, treinamento de colaboradores e conscientização dos usuários, a campanha #SemDesperdício tem alcançado significativas taxas de diminuição dos valores de resta-ingesta, que corresponde à refeição produzida que é descartada.",
+      "id_publisher": 6
     }
   ],
-
   "publishers": [
     {
       "id": 1,
@@ -91,7 +164,6 @@
       "thumbnail": "http://www.ufla.br/dcom/wp-content/uploads/2013/02/05.02-RU-jantar-frente.jpg"
     }
   ],
-
   "likes": [
     {
       "id": 1,
@@ -100,7 +172,6 @@
       "likeable_type": 0
     }
   ],
-
   "favorites": [
     {
       "id": 11,
@@ -131,15 +202,8 @@
       "newsId": 3,
       "userId": 1,
       "favoriteType": 1
-    },
-    {
-      "id": 20,
-      "newsId": 2,
-      "userId": 1,
-      "favoriteType": 1
     }
   ],
-
   "subscribed_publishers": [
     {
       "id": 1,
@@ -147,7 +211,6 @@
       "id_publisher": 1
     }
   ],
-
   "sections": [
     {
       "id": 1,
@@ -192,7 +255,6 @@
       "image": "file:/Teste/Imagem"
     }
   ],
-
   "comments": [
     {
       "id": 1,
