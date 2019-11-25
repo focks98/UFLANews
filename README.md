@@ -66,6 +66,7 @@ Para colocar esta API em funcionamento, execute o comando abaixo:
 
 #### Aplicativo
 
+Vá para o diretório do **app**.
 Instale os scripts do *framework* Ionic:
 > npm install @ionic/app-scripts@latest --save-dev
 
