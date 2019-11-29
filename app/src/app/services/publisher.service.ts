@@ -43,6 +43,22 @@ export class PublisherService {
     ).toPromise();
   }
 
+  async getSubscribesUser(id_user: number): Promise<SubscribedPublisherModel[]> {
+
+    const options = await this.getHttpOptions();
+
+    return this.http.get(`${API_URL}/subscribed_publishers?id_user=${id_user}`, options).map(
+      (itens: SubscribedPublisherModel[]) => {
+        return itens.map(
+          (item: SubscribedPublisherModel) => {
+            return new SubscribedPublisherModel(
+              item.id, item.id_user, item.id_publisher);
+          }
+        )
+      }
+    ).toPromise();
+  }
+
   async searchById(id: number): Promise<PublisherModel> {
     const options = await this.getHttpOptions();
 

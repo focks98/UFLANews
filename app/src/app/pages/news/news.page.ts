@@ -34,7 +34,6 @@ export class NewsPage {
   ) { }
 
   async ngOnInit() {
-    console.log('chamei init')
     this.lstNews = await this.newsService.getAll();
 
     const userEmail = await this.authService.getAuthEmail();

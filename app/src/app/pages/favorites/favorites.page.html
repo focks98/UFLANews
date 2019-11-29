@@ -1,6 +1,6 @@
   <ion-content>
-    <ion-card *ngFor="let publisher of lstFavoriteNews">
-      <ion-card-header>
+    <ion-card *ngFor="let publisher of lstFavoritePublishers">
+      <ion-card-header *ngIf="verifySubscribe(publisher.id)">
         <ion-grid>
           <ion-row>
             <ion-col size="2">

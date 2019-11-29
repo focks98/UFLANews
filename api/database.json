@@ -305,6 +305,11 @@
       "id": 8,
       "id_user": 6,
       "id_publisher": 5
+    },
+    {
+      "id": 9,
+      "id_user": 6,
+      "id_publisher": 4
     }
   ],
   "sections": [

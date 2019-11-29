@@ -17,7 +17,9 @@ import { SubscribedPublisherModel } from '../../model/subscribed_publisher.model
 export class PublisherPage implements OnInit {
 
   listPublishers: PublisherModel[];
+  listSubscribes: SubscribedPublisherModel[];
   user: UserModel;
+  arraySubscribes;
 
 
   constructor(
@@ -30,6 +32,16 @@ export class PublisherPage implements OnInit {
 
     const userEmail = await this.authService.getAuthEmail();
     this.user = await this.userService.getUserByEmail(userEmail);
+
+
+    this.listSubscribes = await this.publisherService.getSubscribesUser(this.user.id);
+
+    //Contém as notícias curtidas pelo usuário
+    this.arraySubscribes = []
+    for (let index = 0; index < this.listSubscribes.length; index++) {
+      await this.arraySubscribes.push(this.listSubscribes[index].id_publisher);
+    }
+
   }
 
   async doRefresh(event: any) {
@@ -50,6 +62,11 @@ export class PublisherPage implements OnInit {
     await this.publisherService.postSubscribedPublisher(subscribe);
 
 
+  }
+
+  verifySubscribe(id_publisher: number) {    
+    return (this.arraySubscribes.indexOf(id_publisher) != -1);
+    
   }
   
 }
