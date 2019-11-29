@@ -11,7 +11,6 @@ import { UserService } from 'src/app/services/user.service';
 import { AlertController } from '@ionic/angular';
 import { CommentsModel } from '../../model/comments.model';
 import { LikesModel } from '../../model/likes.model';
-import { ConsoleReporter } from 'jasmine';
 import { SectionsModel } from 'src/app/model/sections.model';
 
 @Component({
@@ -63,7 +62,8 @@ export class NewsDetailPage implements OnInit {
     this.sectionsNews = await this.newsService.getSectionsNews(this.newsId);
   }
 
-  /*
+    /*
+
   async handleFavorite() {
     if (!this.starId) {
       const favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.STAR);
@@ -73,7 +73,8 @@ export class NewsDetailPage implements OnInit {
       this.starId = null;
     }
   }
-  */
+    */
+
   async handleLike() {
     if (!this.likeId) {
       this.likeAlert();

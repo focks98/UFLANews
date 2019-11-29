@@ -116,7 +116,7 @@
     {
       "id": 10,
       "title": "Restaurante Universitário realiza pesquisa de satisfação sobre seus serviços ",
-      "likes": 13,
+      "likes": 14,
       "publishedAt": "12/11/2019 18:11:34",
       "image": "https://ufla.br/images/noticias/2019/11_nov/ru-menor.jpg",
       "content": "O Restaurante Universitário da Universidade Federal de Lavras (RU/UFLA) está realizando pesquisa de satisfação com estudantes, docentes e técnicos que utilizam o serviço. O objetivo é identificar como os usuários avaliam o cardápio oferecido em 2019 e as novas dependências do RU.",
@@ -214,6 +214,11 @@
       "id": 11,
       "id_user": 6,
       "id_news": 9
+    },
+    {
+      "id": 12,
+      "id_user": 6,
+      "id_news": 10
     }
   ],
   "favorites": [
@@ -327,25 +332,11 @@
       "content": "Impressionante"
     },
     {
-      "id": 3,
-      "id_news": 1,
-      "id_user": 6,
-      "publishedAt": "01/08/1990 02:02:01",
-      "content": "aqui"
-    },
-    {
       "id": 4,
       "id_news": 1,
       "id_user": 1,
       "publishedAt": "2019-11-28T20:02:21.148Z",
       "content": "daoraa"
-    },
-    {
-      "id": 12,
-      "id_news": 1,
-      "id_user": 6,
-      "publishedAt": "2019-11-28T20:24:25.888Z",
-      "content": "boaa"
     },
     {
       "id": 13,
@@ -375,22 +366,22 @@
       "id": 17,
       "id_news": 1,
       "id_user": 6,
-      "publishedAt": "2019-11-28T20:57:05.630Z",
-      "content": "chique"
+      "publishedAt": "2019-11-29T17:57:43.962Z",
+      "content": "teste"
     },
     {
       "id": 18,
-      "id_news": 1,
+      "id_news": 2,
       "id_user": 6,
-      "publishedAt": "2019-11-28T21:11:13.446Z",
-      "content": "daora demais"
+      "publishedAt": "2019-11-29T17:59:38.445Z",
+      "content": "eita"
     },
     {
-      "id": 20,
-      "id_news": 1,
+      "id": 19,
+      "id_news": 4,
       "id_user": 6,
-      "publishedAt": "2019-11-28T21:14:00.382Z",
-      "content": "bora"
+      "publishedAt": "2019-11-29T18:00:12.914Z",
+      "content": "legal"
     }
   ]
 }
