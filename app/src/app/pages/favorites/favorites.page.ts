@@ -14,6 +14,7 @@ export class FavoritesPage implements OnInit {
 
   lstFavoriteNews: FavoriteModel[];
   user: UserModel;
+  
 
   constructor(
     public favoritesService: FavoritesService,
@@ -26,13 +27,13 @@ export class FavoritesPage implements OnInit {
     this.user = await this.userService.getUserByEmail(userEmail);
 
     this.lstFavoriteNews = await this.favoritesService.
-      getAllByUser(this.user.id, FavoriteTypeModel.STAR);
+      getAllSubscribedPublishers(this.user.id);
   }
 
   async doRefresh(event: any) {
     try {
       this.lstFavoriteNews = await this.favoritesService.
-        getAllByUser(this.user.id, FavoriteTypeModel.STAR);
+      getAllSubscribedPublishers(this.user.id);
     } finally {
       event.target.complete();
     }

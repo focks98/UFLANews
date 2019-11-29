@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import 'rxjs/Rx';
 import { AuthService } from './auth.service';
+import { SubscribedPublisherModel } from '../model/subscribed_publisher.model';
 
 const API_URL: string = "http://localhost:8000";
 
@@ -84,5 +85,19 @@ export class PublisherService {
           item.id, item.name, item.thumbnail);
       }
     ).toPromise();
+  }
+
+  async postSubscribedPublisher(subscribe: SubscribedPublisherModel) {
+    
+    const options = await this.getHttpOptions(); 
+
+    return this.http.post(`${API_URL}/subscribed_publishers`, subscribe, options).map(
+      (item: SubscribedPublisherModel) => {
+        return new SubscribedPublisherModel(
+          item.id, item.id_user, item.id_publisher);
+      }
+    ).toPromise();
+    
+
   }
 }

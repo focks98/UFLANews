@@ -7,6 +7,7 @@ import { FavoriteModel, FavoriteTypeModel } from '../model/favorite.model';
 import { AuthService } from './auth.service';
 import { LikesModel } from '../model/likes.model';
 import { SectionsModel } from '../model/sections.model';
+import { PublisherModel } from '../model/publisher.model';
 
 const API_URL: string = "http://localhost:8000";
 
@@ -48,6 +49,20 @@ export class FavoritesService {
         return itens.map(
           (item: FavoriteModel) => {
             return new FavoriteModel(item.user, item.news, item.favoriteType, item.id);
+          }
+        )
+      }
+    ).toPromise();
+  }
+
+  async getAllSubscribedPublishers(userId: number): Promise<PublisherModel[]> {
+    const options = await this.getHttpOptions();
+
+    return this.http.get(`${API_URL}/publishers?id_user=${userId}`, options).map(
+      (itens: PublisherModel[]) => {
+        return itens.map(
+          (item: PublisherModel) => {
+            return new PublisherModel(item.id, item.name, item.thumbnail);
           }
         )
       }
