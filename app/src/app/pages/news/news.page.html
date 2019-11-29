@@ -20,6 +20,7 @@
 
     <div *ngFor="let news of lstNews">
       <ion-card *ngIf="news.id_publisher == publisher.id" [routerLink]="['/details', news.id]">
+
         <ion-grid>
           <ion-row>
             <img src="{{news.image}}" class="img_news"/>
@@ -34,8 +35,9 @@
             <ion-row>
               <ion-col></ion-col>
               <ion-card-subtitle>
-                <ion-tab-button>
-                  <ion-icon name="heart" color="danger"></ion-icon>
+                <ion-tab-button >
+                    <ion-icon  *ngIf="verifyLike(news.id)" name="heart" color="danger"></ion-icon>
+                    <ion-icon  *ngIf="!verifyLike(news.id)" name="heart" color="warning"></ion-icon>
                   <ion-label>{{news.likes | likes}} likes</ion-label>
                 </ion-tab-button>
               </ion-card-subtitle>

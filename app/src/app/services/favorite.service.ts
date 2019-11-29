@@ -5,6 +5,8 @@ import 'rxjs/Rx';
 
 import { FavoriteModel, FavoriteTypeModel } from '../model/favorite.model';
 import { AuthService } from './auth.service';
+import { LikesModel } from '../model/likes.model';
+import { SectionsModel } from '../model/sections.model';
 
 const API_URL: string = "http://localhost:8000";
 
@@ -28,12 +30,12 @@ export class FavoritesService {
     return options;
   }
 
-  async getFavoriteId(userId: number, newsId: number, type: FavoriteTypeModel): Promise<number> {
+  async getLikeId(userId: number, newsId: number): Promise<number> {
     const options = await this.getHttpOptions();
 
-    return this.http.get(`${API_URL}/favorites?userId=${userId}&newsId=${newsId}&favoriteType=${type}`, options).map(
-      (favorites: FavoriteModel[]) => {
-        return (favorites.length == 0) ? null : favorites[0].id;
+    return this.http.get(`${API_URL}/likes?id_user=${userId}&id_news=${newsId}`, options).map(
+      (likes: LikesModel[]) => {
+        return (likes.length == 0) ? null : likes[0].id;
       }
     ).toPromise();
   }
@@ -52,18 +54,18 @@ export class FavoritesService {
     ).toPromise();
   }
 
-  async add(favorite: FavoriteModel): Promise<number> {    
+  async add(like: LikesModel): Promise<number> {    
     const data: any = {
-      newsId: favorite.news.id,
-      userId: favorite.user.id,
-      favoriteType: favorite.favoriteType,
+      id: like.id,
+      id_user: like.id_user,
+      id_news: like.id_news
     }
 
     const options = await this.getHttpOptions();
 
-    return this.http.post(`${API_URL}/favorites`, data, options).map(
-      (favorite: FavoriteModel) => {
-        return favorite.id;
+    return this.http.post(`${API_URL}/likes`, data, options).map(
+      (like: LikesModel) => {
+        return like.id;
       }
     ).toPromise();
   }
@@ -71,6 +73,6 @@ export class FavoritesService {
   async delete(id: number): Promise<any> {
     const options = await this.getHttpOptions();
 
-    return this.http.delete(`${API_URL}/favorites/${id}`, options).toPromise();
+    return this.http.delete(`${API_URL}/likes/${id}`, options).toPromise();
   }
 }
