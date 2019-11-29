@@ -141,7 +141,11 @@ export class NewsDetailPage implements OnInit {
       this.commentUser = '';
       this.commentsNews = await this.newsService.getAllCommentsNews(this.newsId);
       this.editComment = false;
-      alert('Comentário editado com sucesso')
+      const alert = await this.alertController.create({
+        message: 'Comentário editado com sucesso',
+        buttons: ['OK']
+      });
+      await alert.present();
     }
 
   }
