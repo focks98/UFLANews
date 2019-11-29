@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { PublisherModel } from 'src/app/model/publisher.model';
 import { PublisherService } from 'src/app/services/publisher.service';
-import { UserModel } from 'src/app/model/user.model';
 import { ActivatedRoute } from '@angular/router';
+import { NewsModel } from 'src/app/model/news.model'
+import { NewsService } from 'src/app/services/news.service'
+import { AlertController } from '@ionic/angular';
+import { LikesPipe } from 'src/app/pipes/likes.pipe';
 
 @Component({
   selector: 'app-news',
@@ -12,26 +15,29 @@ import { ActivatedRoute } from '@angular/router';
 
 export class PublisherPage implements OnInit {
 
-  listPublishers: PublisherModel[];
+  selectedPublisher: PublisherModel;
+  publisherId: number;
+  lstNews : NewsModel[];
 
   constructor(
+    public newsService : NewsService,
+    public activatedRoute: ActivatedRoute,
     public publisherService: PublisherService) {}
 
   async ngOnInit() {
-    this.listPublishers = await this.publisherService.getAll();
+      this.publisherId = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
+
+      this.selectedPublisher = await this.publisherService.searchById(this.publisherId);
+      this.lstNews = await this.newsService.getAll();
   }
 
   async doRefresh(event: any) {
     try {
-      this.listPublishers = await this.publisherService.getAll();
+        this.publisherId = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
+        this.selectedPublisher = await this.publisherService.searchById(this.publisherId);
     } finally {
       event.target.complete();
     }
   }
 
-  async updateListPublishers(event: any) {
-    this.listPublishers = await this.publisherService.searchByName(event.target.value);
-  }
-  
 }
-

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { PublisherModel } from '../model/publisher.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { NewsModel } from '../model/news.model';
+import { NewsService } from 'src/app/services/news.service';
 
 import 'rxjs/Rx';
 import { AuthService } from './auth.service';

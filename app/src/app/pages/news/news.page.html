@@ -6,7 +6,7 @@
   <ion-card *ngFor="let publisher of listPublishers">
     <ion-card-header>
       <ion-grid>
-        <ion-row>
+        <ion-row [routerLink]="['/publishers', publisher.id]">
           <ion-col size="2">
             <img src="{{publisher.thumbnail}}"/>
           </ion-col>
