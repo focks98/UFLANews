@@ -63,6 +63,7 @@ export class NewsDetailPage implements OnInit {
     this.sectionsNews = await this.newsService.getSectionsNews(this.newsId);
   }
 
+  /*
   async handleFavorite() {
     if (!this.starId) {
       const favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.STAR);
@@ -72,7 +73,7 @@ export class NewsDetailPage implements OnInit {
       this.starId = null;
     }
   }
-
+  */
   async handleLike() {
     if (!this.likeId) {
       this.likeAlert();
