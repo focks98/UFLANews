@@ -207,28 +207,13 @@
   "subscribed_publishers": [
     {
       "id": 1,
-      "id_user": 1,
-      "id_publisher": 1
-    },
-    {
-      "id": 2,
-      "id_user": 2,
-      "id_publisher": 1
-    },
-    {
-      "id": 3,
-      "id_user": 2,
-      "id_publisher": 1
-    },
-    {
-      "id": 4,
       "id_user": 2,
       "id_publisher": 2
     },
     {
-      "id": 5,
+      "id": 2,
       "id_user": 2,
-      "id_publisher": 3
+      "id_publisher": 2
     }
   ],
   "sections": [

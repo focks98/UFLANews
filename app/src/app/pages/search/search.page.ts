@@ -19,6 +19,7 @@ export class SearchPage implements OnInit {
   listPublishers: PublisherModel[];
   listSubscribes: SubscribedPublisherModel[];
   user: UserModel;
+  subscribeId: number;
   arraySubscribes;
 
 
@@ -35,6 +36,8 @@ export class SearchPage implements OnInit {
 
 
     this.listSubscribes = await this.publisherService.getSubscribesUser(this.user.id);
+
+    this.subscribeId = 0;
 
     //Contém as notícias curtidas pelo usuário
     this.arraySubscribes = []
@@ -57,11 +60,31 @@ export class SearchPage implements OnInit {
   }
 
   async subscribedPublisher(publisher_id: number){
-    let subscribe = new SubscribedPublisherModel(null, this.user.id, publisher_id);
+    
+    if (!this.verifySubscribe(publisher_id)) {
 
-    await this.publisherService.postSubscribedPublisher(subscribe);
+      let subscribe = new SubscribedPublisherModel(null, this.user.id, publisher_id);
 
+      await this.publisherService.postSubscribedPublisher(subscribe);
 
+    } else {
+
+      this.subscribeId = this.verifyId(publisher_id);
+      await this.publisherService.delete(this.subscribeId);
+
+    }
+
+  }
+
+  verifyId(publisher_id: number){
+
+    for (let index = 0; index < this.listSubscribes.length; index++) {
+
+      if(this.arraySubscribes[index] === publisher_id) {
+        console.log("entrei aq");
+        return this.subscribeId = this.listSubscribes[index].id;
+      }
+    }
   }
 
   verifySubscribe(id_publisher: number) {    

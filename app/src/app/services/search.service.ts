@@ -116,4 +116,9 @@ export class SearchService {
     
 
   }
+  async delete(id: number): Promise<any> {
+    const options = await this.getHttpOptions();
+
+    return this.http.delete(`${API_URL}/subscribed_publishers/${id}`, options).toPromise();
+  }
 }
