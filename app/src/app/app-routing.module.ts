@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
   { path: 'my-account', loadChildren: './pages/my-account/my-account.module#MyAccountPageModule' },
   { path: 'edit', loadChildren: './pages/edit/edit.module#EditPageModule' },
-  { path: 'publishers/:id', loadChildren: './pages/publisher/publisher.module#PublisherPageModule' }
-
+  { path: 'publishers/:id', loadChildren: './pages/publisher/publisher.module#PublisherPageModule' },
+  //{ path: 'publisher', loadChildren: './pages/publisher/publisher.module#PublisherPageModule' }
 ];
 @NgModule({
   imports: [
