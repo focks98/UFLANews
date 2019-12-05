@@ -1,7 +1,0 @@
-{
-  "name": "fakenewsapp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
