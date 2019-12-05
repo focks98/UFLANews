@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/news"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Boletim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="currentNews">
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card-title>
+              {{currentNews.title}}
+            </ion-card-title>
+            <ion-card-subtitle>{{currentNews.publishedAt | timeAgo}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row align-self-end>
+          <ion-col size="9"></ion-col>
+          <ion-col>
+            <ion-tab-button>
+              <ion-icon name="heart" *ngIf="likeId" (click)="handleLike()" color="danger" ></ion-icon>
+              <ion-icon name="heart" *ngIf="!likeId" (click)="handleLike()"></ion-icon>
+              <ion-label>{{currentNews.likes | likes}}</ion-label>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <img src="{{currentNews.image}}"/>
+    </ion-card-header>
+
+    <br>
+
+    <ion-card *ngFor="let section of sectionsNews">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card-title>
+              {{section.title}}
+            </ion-card-title>
+            <ion-card-content>{{section.content}}</ion-card-content>
+          </ion-col>
+        </ion-row>
+        <ion-row align-self-end>
+          <ion-col size="9"></ion-col>
+          <ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+  <ion-card-content id="commentsUsers" style="display:none">
+    <ion-card-title>Comentários</ion-card-title>
+    <ion-card *ngFor="let comment of commentsNews">
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="10" >
+              <ion-card-subtitle >{{comment.content}}</ion-card-subtitle>
+            </ion-col>
+
+            <ion-col *ngIf="comment.id_user == user.id">
+                <ion-icon ios="ios-create" md="md-create" (click)="updateComment(comment)"></ion-icon>
+                <ion-icon ios="ios-trash" md="md-trash" (click)="removeComment(comment.id)"></ion-icon>
+            </ion-col>
+
+
+          </ion-row>
+        </ion-grid>
+      </ion-card-header>
+    </ion-card>
+  </ion-card-content>
+
+<div id="comments" style="display:none">
+
+  <ion-text class="ion-margin" color="danger" *ngIf="editComment" margi>Edição</ion-text>
+  
+  <ion-item>
+    <ion-input id="inputComment" [(ngModel)]="commentUser" placeholder="Digite seu comentário"></ion-input>
+    <ion-icon name="send" (click)="sendComment(currentNews.id)"></ion-icon>
+  </ion-item>
+  
+</div>
+
+<ion-footer style="background-color:#1a691a;">
+  <ion-tab-button (click)="handleCommentsVisibility()">
+      <ion-icon name="chatbubbles" color="light"></ion-icon>
+      <ion-label color="light">Comentários</ion-label>
+  </ion-tab-button>
+
+</ion-footer>

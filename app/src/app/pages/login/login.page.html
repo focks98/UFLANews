@@ -1,0 +1,25 @@
+
+<img class="img_logo" src="assets/icon/logo2_ufla.png" />
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <br><br><br><br>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <br><br>
+  <ion-button (click)="login()" expand="block" color="tertiary">Entrar</ion-button>
+
+  <br>
+  <ion-button expand="block" fill='solid' routerLink="/inicial" routerDirection="backward" color="danger">
+    Cancelar
+  </ion-button>
+
+</ion-content>
