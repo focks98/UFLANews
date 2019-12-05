@@ -4,7 +4,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngIf="selectedPublisher">
+  <ion-card *ngFor="let publisher of listPublishers">
     <ion-card-header>
       <ion-grid>
         <ion-row>
@@ -16,7 +16,8 @@
           </ion-col>
           <ion-col>
             <ion-tab-button>
-              <ion-icon name="star"></ion-icon>
+              <ion-icon  *ngIf="verifySubscribe(publisher.id)"  name="star" color="primary" (click)="subscribedPublisher(publisher.id)"></ion-icon>
+              <ion-icon  *ngIf="!verifySubscribe(publisher.id)"  name="star" color="warning" (click)="subscribedPublisher(publisher.id)"></ion-icon>
             </ion-tab-button>
           </ion-col>
         </ion-row>

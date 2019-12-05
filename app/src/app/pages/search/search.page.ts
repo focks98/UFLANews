@@ -25,16 +25,16 @@ export class SearchPage implements OnInit {
   constructor(
     public authService: AuthService,
     public userService: UserService,
-    public searchService: SearchService) {}
+    public publisherService: SearchService) {}
 
   async ngOnInit() {
-    this.listPublishers = await this.searchService.getAll();
+    this.listPublishers = await this.publisherService.getAll();
 
     const userEmail = await this.authService.getAuthEmail();
     this.user = await this.userService.getUserByEmail(userEmail);
 
 
-    this.listSubscribes = await this.searchService.getSubscribesUser(this.user.id);
+    this.listSubscribes = await this.publisherService.getSubscribesUser(this.user.id);
 
     //Contém as notícias curtidas pelo usuário
     this.arraySubscribes = []
@@ -46,20 +46,20 @@ export class SearchPage implements OnInit {
 
   async doRefresh(event: any) {
     try {
-      this.listPublishers = await this.searchService.getAll();
+      this.listPublishers = await this.publisherService.getAll();
     } finally {
       event.target.complete();
     }
   }
 
   async updateListPublishers(event: any) {
-    this.listPublishers = await this.searchService.searchByName(event.target.value);
+    this.listPublishers = await this.publisherService.searchByName(event.target.value);
   }
 
   async subscribedPublisher(publisher_id: number){
     let subscribe = new SubscribedPublisherModel(null, this.user.id, publisher_id);
 
-    await this.searchService.postSubscribedPublisher(subscribe);
+    await this.publisherService.postSubscribedPublisher(subscribe);
 
 
   }

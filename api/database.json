@@ -219,6 +219,11 @@
       "id": 3,
       "id_user": 2,
       "id_publisher": 1
+    },
+    {
+      "id": 4,
+      "id_user": 2,
+      "id_publisher": 2
     }
   ],
   "sections": [
