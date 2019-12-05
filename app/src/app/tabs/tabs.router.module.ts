@@ -20,12 +20,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'publisher',
+        path: 'search',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/publisher/publisher.module').then(m => m.PublisherPageModule)
+              import('../pages/search/search.module').then(m => m.SearchPageModule)
           }
         ]
       },
