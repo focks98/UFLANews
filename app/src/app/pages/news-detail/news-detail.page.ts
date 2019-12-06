@@ -102,6 +102,23 @@ export class NewsDetailPage implements OnInit {
     }
   }
 
+  horarioPublicacao(data: string){
+    let data_partes = data.split('T')
+
+    let data_dia = data_partes[0].split('-')
+    
+    let dia = data_dia[2]
+    let mes = data_dia[1]
+    let ano = data_dia[0]
+
+    let data_publicada = dia + '/' + mes + '/' + ano
+
+    let horario_publicado = data_partes[1].split(':')
+    let hora = horario_publicado[0] + ":" + horario_publicado[1]
+
+    return data_publicada + ' às ' + hora
+  }
+
   async likeAlert() {
 
     const alert = await this.alertController.create({

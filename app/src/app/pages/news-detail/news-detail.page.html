@@ -58,18 +58,33 @@
     <ion-card *ngFor="let comment of commentsNews">
       <ion-card-header>
         <ion-grid>
+
+          <ion-row>
+            <ion-col>
+              <ion-text color="success">
+                <h3>Usuário: {{comment.id_user}}</h3>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+
           <ion-row>
             <ion-col size="10" >
               <ion-card-subtitle >{{comment.content}}</ion-card-subtitle>
             </ion-col>
-
             <ion-col *ngIf="comment.id_user == user.id">
                 <ion-icon ios="ios-create" md="md-create" (click)="updateComment(comment)"></ion-icon>
                 <ion-icon ios="ios-trash" md="md-trash" (click)="removeComment(comment.id)"></ion-icon>
             </ion-col>
-
-
           </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-text>
+                <p>{{horarioPublicacao(comment.publishedAt)}}</p>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+
         </ion-grid>
       </ion-card-header>
     </ion-card>
