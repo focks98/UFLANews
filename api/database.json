@@ -44,7 +44,7 @@
     {
       "id": 2,
       "title": "Posses em outubro: 20 novos servidores passaram a integrar o quadro da UFLA",
-      "likes": 5000001,
+      "likes": 5000002,
       "publishedAt": "09/04/2019 19:02:00",
       "image": "https://ufla.br/images/phocagallery/galerias-noticias/2019/11_premios_dcc/thumbs/phoca_thumb_m_image001.jpg",
       "content": "Durante o mês de outubro, vinte novos servidores foram empossados na Universidade Federal de Lavras (UFLA), todos habilitados em concurso público para professores. Preencheram vagas  nos Departamentos de Administração e Economia (DAE), Ciências da Saúde (DAS), Engenharia (DEG), Agricultura (DAG), Biologia (DBI), Direito (DIR), Ciência da Computação (DCC), Química (DQI) e Núcleo de Educação da Infância (Nedi).",
@@ -166,10 +166,9 @@
   ],
   "likes": [
     {
-      "id": 1,
+      "id": 2,
       "id_user": 1,
-      "id_news": 1,
-      "likeable_type": 0
+      "id_news": 2
     }
   ],
   "favorites": [
@@ -206,14 +205,19 @@
   ],
   "subscribed_publishers": [
     {
-      "id": 1,
-      "id_user": 2,
-      "id_publisher": 2
+      "id": 3,
+      "id_user": 1,
+      "id_publisher": 1
     },
     {
-      "id": 2,
-      "id_user": 2,
-      "id_publisher": 2
+      "id": 7,
+      "id_user": 1,
+      "id_publisher": 6
+    },
+    {
+      "id": 9,
+      "id_user": 1,
+      "id_publisher": 3
     }
   ],
   "sections": [

@@ -37,7 +37,7 @@
               <ion-card-subtitle>
                 <ion-tab-button >
                     <ion-icon  *ngIf="verifyLike(news.id)" name="heart" color="danger"></ion-icon>
-                    <ion-icon  *ngIf="!verifyLike(news.id)" name="heart" color="warning"></ion-icon>
+                    <ion-icon  *ngIf="!verifyLike(news.id)" name="heart"></ion-icon>
                   <ion-label>{{news.likes | likes}} likes</ion-label>
                 </ion-tab-button>
               </ion-card-subtitle>

@@ -87,7 +87,7 @@ export class FavoritesService {
     ).toPromise();
   }
 
-  async add(like: LikesModel): Promise<number> {    
+  async add(like: LikesModel): Promise<number> {
     const data: any = {
       id: like.id,
       id_user: like.id_user,

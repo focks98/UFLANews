@@ -44,7 +44,6 @@ export class SearchService {
   }
 
   async getSubscribesUser(id_user: number): Promise<SubscribedPublisherModel[]> {
-
     const options = await this.getHttpOptions();
 
     return this.http.get(`${API_URL}/subscribed_publishers?id_user=${id_user}`, options).map(
@@ -116,6 +115,7 @@ export class SearchService {
     
 
   }
+  
   async delete(id: number): Promise<any> {
     const options = await this.getHttpOptions();
 

@@ -35,8 +35,6 @@ export class NewsDetailPage implements OnInit {
   arrayLikes;
 
   sectionsNews: SectionsModel[];
-  
-  
 
   constructor(
     public activatedRoute: ActivatedRoute,
@@ -180,12 +178,6 @@ export class NewsDetailPage implements OnInit {
     else{
       this.updateComment(this.commentWillEdit);
     }
-
-
-
-    
-
   }
-
 
 }
