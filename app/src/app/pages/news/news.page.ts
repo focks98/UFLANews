@@ -15,8 +15,6 @@ import { UserModel } from 'src/app/model/user.model';
   styleUrls: ['./news.page.scss'],
 })
 
-
-
 export class NewsPage {
 
   lstNews: NewsModel[];
@@ -30,20 +28,16 @@ export class NewsPage {
     public publisherService: PublisherService,
     public authService: AuthService,
     public userService: UserService
-    
   ) { }
 
   async ngOnInit() {
     this.lstNews = await this.newsService.getAll();
-
     const userEmail = await this.authService.getAuthEmail();
     this.user = await this.userService.getUserByEmail(userEmail);
     this.lstLikes = await this.newsService.getLikesUser(this.user.id);
-
-    
     this.listPublishers = await this.publisherService.getAll();
 
-    //Contém as notícias curtidas pelo usuário
+    // Contém as notícias curtidas pelo usuário
     this.arrayLikes = []
     for (let index = 0; index < this.lstLikes.length; index++) {
       await this.arrayLikes.push(this.lstLikes[index].id_news);
@@ -56,18 +50,14 @@ export class NewsPage {
       this.lstNews = await this.newsService.getAll();
     } finally {
       event.target.complete();
-    }    
+    }
   }
 
   async updateListNews(event: any) {
     this.lstNews = await this.newsService.searchByTitle(event.target.value);
   }
 
-  
-  verifyLike(id_news: number) {    
+  verifyLike(id_news: number) {
     return (this.arrayLikes.indexOf(id_news) != -1);
-    
   }
-  
-  
 }

@@ -92,14 +92,11 @@
   </ion-card-content>
 
 <div id="comments" style="display:none">
-
   <ion-text class="ion-margin" color="danger" *ngIf="editComment" margi>Edição</ion-text>
-  
   <ion-item>
     <ion-input id="inputComment" [(ngModel)]="commentUser" placeholder="Digite seu comentário"></ion-input>
     <ion-icon name="send" (click)="sendComment(currentNews.id)"></ion-icon>
   </ion-item>
-  
 </div>
 
 <ion-footer style="background-color:#1a691a;">

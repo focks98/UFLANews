@@ -14,11 +14,11 @@
     <br>
     <ion-item>
       <ion-label position="stacked">Nome</ion-label>
-      <ion-input [(ngModel)]="user.name" value=user.name></ion-input>
+      <ion-input id="nome" [(ngModel)]="user.name" value=user.name></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Email</ion-label>
-      <ion-input [(ngModel)]="user.email" value=user.email></ion-input>
+      <ion-input id="email" [(ngModel)]="user.email" value=user.email></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Nova senha</ion-label>
@@ -31,6 +31,9 @@
   </ion-list>
   <br>
   <ion-button expand="block" (click)="save()" color="tertiary">Salvar</ion-button>
-
+  <br>
+  <ion-button expand="block" fill='solid' routerLink="/my-account" color="danger">
+    Cancelar
+  </ion-button>
 
 </ion-content>

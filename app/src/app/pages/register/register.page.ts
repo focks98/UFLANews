@@ -60,9 +60,6 @@ export class RegisterPage implements OnInit {
       } catch (error) {
         this.toastService.presentMessage("Já existe uma conta cadastrada com esse endereço de email!", MessageType.ERROR);
       }
-
     }
-
   }
-
 }

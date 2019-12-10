@@ -3,6 +3,7 @@ export class NewsModel {
         public id: number,
         public title: string,
         public likes: number,
+        public comments: number,
         public publishedAt: Date,
         public image: string,
         public content: string,

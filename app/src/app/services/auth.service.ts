@@ -60,6 +60,7 @@ export class AuthService {
       "email": email,
       "password": password
     }
+
     return this.http.post(`${API_URL}/auth/register`, data).toPromise();
   }
 

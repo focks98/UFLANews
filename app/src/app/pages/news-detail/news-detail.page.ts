@@ -60,24 +60,10 @@ export class NewsDetailPage implements OnInit {
     this.sectionsNews = await this.newsService.getSectionsNews(this.newsId);
   }
 
-    /*
-
-  async handleFavorite() {
-    if (!this.starId) {
-      const favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.STAR);
-      this.starId = await this.favoritesService.add(favorite);
-    } else {
-      await this.favoritesService.delete(this.starId);
-      this.starId = null;
-    }
-  }
-    */
-
   async handleLike() {
     if (!this.likeId) {
       this.likeAlert();
       let like = new LikesModel(null, this.user.id, this.newsId);
-      //let favorite = new FavoriteModel(this.user, this.currentNews, FavoriteTypeModel.LIKE);
       this.likeId = await this.favoritesService.add(like);
       this.currentNews.likes += 1;
     } else {
@@ -118,13 +104,11 @@ export class NewsDetailPage implements OnInit {
   }
 
   async likeAlert() {
-
     const alert = await this.alertController.create({
       message: 'Like atribuído com sucesso!',
       buttons: ['OK']
     });
     await alert.present();
-
   }
 
   async dislikeAlert() {
@@ -136,8 +120,7 @@ export class NewsDetailPage implements OnInit {
   }
 
   async updateComment(comment: CommentsModel) {
-
-    if(!this.editComment){
+    if (!this.editComment) {
       const alert = await this.alertController.create({
         message: 'Digite o comentário para edição',
         buttons: ['OK']
@@ -150,7 +133,7 @@ export class NewsDetailPage implements OnInit {
 
       return false;
     }
-    else{
+    else {
       comment.content = this.commentUser
   
       await this.newsService.updateComment(comment);
@@ -164,37 +147,34 @@ export class NewsDetailPage implements OnInit {
       });
       await alert.present();
     }
-
   }
 
   async removeComment(id_comment: number) {
     await this.newsService.deleteComment(id_comment);
-
     this.commentsNews = await this.newsService.getAllCommentsNews(this.newsId);
+    this.currentNews.comments -= 1;
   }
 
   async sendComment(id_news: number) {
-
-    if(!this.commentUser){
+    if (!this.commentUser) {
       alert('Digite algo')
       return false
     }
 
-    if(!this.editComment){
+    if (!this.editComment) {
       let now = new Date();
 
       let comment = new CommentsModel(
         null, id_news, this.user.id, now, this.commentUser);
 
       await this.newsService.postComment(comment);
-
       this.commentUser = ''
-
       this.commentsNews = await this.newsService.getAllCommentsNews(this.newsId);
+      this.currentNews.comments += 1;
     }
-    else{
+    else {
       this.updateComment(this.commentWillEdit);
     }
-  }
 
+  }
 }

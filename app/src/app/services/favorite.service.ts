@@ -15,8 +15,8 @@ const API_URL: string = "http://localhost:8000";
 @Injectable({
   providedIn: 'root'
 })
-export class FavoritesService {
 
+export class FavoritesService {
 
   constructor(public http: HttpClient, public authService: AuthService) { }
 

@@ -31,15 +31,29 @@
             {{news.title}}
           </ion-card-title>
           <ion-card-subtitle>{{news.publishedAt | timeAgo}}</ion-card-subtitle>
+          <ion-col></ion-col>
           <ion-grid>
             <ion-row>
               <ion-col></ion-col>
               <ion-card-subtitle>
-                <ion-tab-button >
-                    <ion-icon  *ngIf="verifyLike(news.id)" name="heart" color="danger"></ion-icon>
-                    <ion-icon  *ngIf="!verifyLike(news.id)" name="heart"></ion-icon>
-                  <ion-label>{{news.likes | likes}} likes</ion-label>
-                </ion-tab-button>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col></ion-col>
+                    <ion-col>
+                      <ion-tab-button>
+                        <ion-icon name="chatbubbles" color="primary"></ion-icon>
+                        <ion-label>{{news.comments | likes}} comments</ion-label>
+                      </ion-tab-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-tab-button>
+                        <ion-icon *ngIf="verifyLike(news.id)" name="heart" color="danger"></ion-icon>
+                        <ion-icon *ngIf="!verifyLike(news.id)" name="heart"></ion-icon>
+                        <ion-label>{{news.likes | likes}} likes</ion-label>
+                      </ion-tab-button>
+                      </ion-col>
+                  </ion-row>
+                </ion-grid>
               </ion-card-subtitle>
             </ion-row>
           </ion-grid>

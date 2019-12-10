@@ -26,4 +26,49 @@ export class EditPage implements OnInit {
     this.user = await this.userService.getUserByEmail(userEmail);
   }
 
+  checkForm() {
+    if (
+      this.user.name == undefined || this.user.name.trim() == "" ||
+      this.user.email == undefined || this.user.email.trim() == "" ||
+      this.password == undefined || this.password.trim() == "" ||
+      this.confPassword == undefined || this.confPassword.trim() == "") {
+      this.toastService.presentMessage("Por favor, preencha todos os campos do formulário!", MessageType.ERROR);
+      return false;
+    }
+
+    if (this.password != this.confPassword) {
+      this.toastService.presentMessage("As senhas informadas não conferem!", MessageType.ERROR);
+      return false;
+    }
+
+    return true;
+  }
+
+  async save() {
+    if (this.checkForm()) {
+      try {
+
+        console.log("id_do_usuario: " + this.user.id);
+        console.log("id_do_usuario: " + this.user.email);
+
+        const token: any = await this.authService.register(this.user.email, this.password);
+
+        // TEM QUE ARRUMAR ISSO
+        // const token: any = await this.authService.editAccount(this.user.id, this.user.email, this.password);
+
+        // Isto foi necessário, pois o token ainda não existe e o usuário
+        // precisa ser cadastrado na base de dados da API
+        await this.userService.add(this.user, token.access_token);
+
+        // this.user = new UserModel();
+        this.password = "";
+        this.confPassword = "";
+
+        this.toastService.presentMessage("Conta editada com sucesso!", MessageType.SUCCESS);
+      } catch (error) {
+        this.toastService.presentMessage("Já existe uma conta cadastrada com esse endereço de email!", MessageType.ERROR);
+      }
+    }
+  }
+
 }

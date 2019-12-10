@@ -38,7 +38,7 @@ export class NewsService {
         return itens.map(
           (item: NewsModel) => {
             return new NewsModel(
-              item.id, item.title, item.likes, item.publishedAt,
+              item.id, item.title, item.likes, item.comments, item.publishedAt,
               item.image, item.content, item.id_publisher);
           }
         )
@@ -144,7 +144,7 @@ export class NewsService {
     return this.http.get(`${API_URL}/news/${id}`, options).map(
       (item: NewsModel) => {
         return new NewsModel(
-          item.id, item.title, item.likes, item.publishedAt,
+          item.id, item.title, item.likes, item.comments, item.publishedAt,
           item.image, item.content, item.id_publisher);
       }
     ).toPromise();
@@ -165,7 +165,7 @@ export class NewsService {
         return itens.map(
           (item: NewsModel) => {
             return new NewsModel(
-              item.id, item.title, item.likes, item.publishedAt,
+              item.id, item.title, item.likes, item.comments, item.publishedAt,
               item.image, item.content, item.id_publisher);
           }
         )
@@ -179,7 +179,7 @@ export class NewsService {
     return this.http.put(`${API_URL}/news/${news.id}`, news, options).map(
       (item: NewsModel) => {
         return new NewsModel(
-          item.id, item.title, item.likes, item.publishedAt,
+          item.id, item.title, item.likes, item.comments, item.publishedAt,
           item.image, item.content, item.id_publisher);
       }
     ).toPromise();
