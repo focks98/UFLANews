@@ -1,4 +1,10 @@
 .img_news {
-    //MUDAR ISSO AQUI
-    height:6.25em;
-  }
+    margin: 10px auto;
+    height: 25vh !important;
+    width: auto !important;
+    max-width: 90%;
+    align-items: center;
+    border-radius: 1vh;
+    -moz-border-radius: 1vh;
+    -webkit-border-radius: 1vh;
+}
