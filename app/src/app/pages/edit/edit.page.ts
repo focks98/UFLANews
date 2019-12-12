@@ -50,6 +50,7 @@ export class EditPage implements OnInit {
 
         console.log("id_do_usuario: " + this.user.id);
         console.log("id_do_usuario: " + this.user.email);
+        console.log("id_do_usuario: " + this.password);
 
         const token: any = await this.authService.register(this.user.email, this.password);
 
@@ -58,7 +59,7 @@ export class EditPage implements OnInit {
 
         // Isto foi necessário, pois o token ainda não existe e o usuário
         // precisa ser cadastrado na base de dados da API
-        await this.userService.add(this.user, token.access_token);
+        await this.userService.update(this.user, token.access_token);
 
         // this.user = new UserModel();
         this.password = "";
