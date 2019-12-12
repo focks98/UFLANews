@@ -60,6 +60,8 @@ export class FavoritesPage implements OnInit {
     }
   }
 
+ 
+
   async subscribedPublisher(publisher_id: number) {
     if (!this.verifySubscribe(publisher_id)) {
       this.subscribeAlert();

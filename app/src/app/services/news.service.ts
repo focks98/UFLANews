@@ -7,6 +7,8 @@ import { AuthService } from './auth.service';
 import { LikesModel } from '../model/likes.model';
 import { CommentsModel } from '../model/comments.model';
 import { SectionsModel } from '../model/sections.model';
+import { isNgTemplate } from '@angular/compiler';
+import { isEmpty } from 'rxjs-compat/operator/isEmpty';
 
 const API_URL: string = "http://localhost:8000";
 

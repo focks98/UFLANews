@@ -8,10 +8,10 @@
     <ion-card-header>
       <ion-grid>
         <ion-row>
-          <ion-col size="2">
+          <ion-col size="2" [routerLink]="['/publishers', publisher.id]">
             <img src="{{publisher.thumbnail}}"/>
           </ion-col>
-          <ion-col size="7">
+          <ion-col size="7" [routerLink]="['/publishers', publisher.id]">
             <ion-label><h4>{{publisher.name}}</h4></ion-label>
           </ion-col>
           <ion-col>
