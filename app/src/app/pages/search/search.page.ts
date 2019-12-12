@@ -68,6 +68,10 @@ export class SearchPage implements OnInit {
       this.subscribeId = this.verifyId(publisher_id);
       await this.publisherService.delete(this.subscribeId);
     }
+
+    this.listPublishers = await this.publisherService.getAll();
+
+
   }
 
   verifyId(publisher_id: number) {

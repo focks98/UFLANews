@@ -45,4 +45,15 @@ export class UserService {
 
     return this.http.post(`${API_URL}/users`, user, options).toPromise();
   }
+
+  async update(user: UserModel, token: string) {
+      const options = {
+        headers: new HttpHeaders({
+          'Authorization': `Bearer ${token}`
+        })
+      };
+      console.log("USUARIO:", user);
+
+      return this.http.put(`${API_URL}/users/${user.id}`, user, options).toPromise();
+  }
 }
