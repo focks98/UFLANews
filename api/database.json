@@ -79,7 +79,7 @@
       "comments": 0,
       "publishedAt": "07/18/2019 10:20:00",
       "image": "http://www.ufla.br/dcom/wp-content/uploads/2016/07/naves-2016-249x166.jpg",
-      "content": "Desde o dia 18/7/2017, a Pró-Reitoria de Graduação (PRG) e a sua Diretoria de Planejamento e Gestão Acadêmica (DPGA) prestam atendimento no novo prédio das pró-reitorias. O edifício, localizado no início da Avenida Sul (próximo ao Pomar da UFLA, ao Centro Administrativo e à Reitoria), possui infraestrutura com mais espaço e comodidade para os servidores e estudantes.",
+      "content": "Desde o dia 18/7/2017, a Pró-Reitoria de Graduação (PRG) e a sua Diretoria de Planejamento e Gestão Acadêmica (DPGA) prestam atendimento no novo prédio das pró-reitorias. O edifício, localizado no início da Avenida Sul (próximo ao Pomar da UFLA, ao Centro Administrativo e �  Reitoria), possui infraestrutura com mais espaço e comodidade para os servidores e estudantes.",
       "id_publisher": 2
     },
     {
@@ -139,7 +139,7 @@
       "comments": 587,
       "publishedAt": "02/09/2019 18:23:00",
       "image": "https://ufla.br/images/noticias/2019/07_jul/sem2.jpg",
-      "content": "A equipe do Restaurante Universitário (RU), vinculada à Pró-reitoria de Assuntos Estudantis e Comunitários (Praec) da Universidade Federal de Lavras (UFLA), tem desenvolvido um projeto para redução do desperdício de alimentos nas refeições oferecidas. A partir de um trabalho contínuo de planejamento, treinamento de colaboradores e conscientização dos usuários, a campanha #SemDesperdício tem alcançado significativas taxas de diminuição dos valores de resta-ingesta, que corresponde à refeição produzida que é descartada.",
+      "content": "A equipe do Restaurante Universitário (RU), vinculada �  Pró-reitoria de Assuntos Estudantis e Comunitários (Praec) da Universidade Federal de Lavras (UFLA), tem desenvolvido um projeto para redução do desperdício de alimentos nas refeições oferecidas. A partir de um trabalho contínuo de planejamento, treinamento de colaboradores e conscientização dos usuários, a campanha #SemDesperdício tem alcançado significativas taxas de diminuição dos valores de resta-ingesta, que corresponde �  refeição produzida que é descartada.",
       "id_publisher": 6
     }
   ],
@@ -191,37 +191,30 @@
     {
       "id": 1,
       "id_news": 1,
-      "id_user": 1,
-      "publishedAt": "01/08/1990 00:00:01",
-      "content": "Teste"
+      "id_user": 6,
+      "publishedAt": "2019-12-12T19:14:14.250Z",
+      "content": "oi"
     },
     {
       "id": 2,
-      "id_news": 2,
-      "id_user": 1,
-      "publishedAt": "01/08/1990 00:00:01",
-      "content": "Teste 1"
+      "id_news": 1,
+      "id_user": 6,
+      "publishedAt": "2019-12-12T19:14:27.449Z",
+      "content": "oi 2"
     },
     {
       "id": 3,
       "id_news": 1,
       "id_user": 1,
-      "publishedAt": "2019-12-10T19:12:41.970Z",
-      "content": "Comentário teste!"
+      "publishedAt": "2019-12-12T19:14:53.268Z",
+      "content": "teste"
     },
     {
       "id": 4,
       "id_news": 1,
       "id_user": 1,
-      "publishedAt": "2019-12-10T19:13:07.071Z",
-      "content": "Mais um comentário"
-    },
-    {
-      "id": 5,
-      "id_news": 1,
-      "id_user": 1,
-      "publishedAt": "2019-12-10T19:17:33.724Z",
-      "content": "Comentário novo..."
+      "publishedAt": "2019-12-12T19:35:03.108Z",
+      "content": "sdfhsdifuhsdiufhsduifhsduifhsdifisduffsdiusdhfisdifsdfsdfihsd"
     }
   ],
   "favorites": [
