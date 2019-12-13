@@ -53,14 +53,15 @@ export class FavoritesPage implements OnInit {
 
   async doRefresh(event: any) {
     try {
-      this.lstFavoritePublishers = await this.favoritesService.
-      getAllSubscribedPublishers(this.user.id);
+      this.listSubscribes = await this.favoritesService.getSubscribesUser(this.user.id);
+      this.arraySubscribes = []
+      for (let index = 0; index < this.listSubscribes.length; index++) {
+        await this.arraySubscribes.push(this.listSubscribes[index].id_publisher);
+      }
     } finally {
       event.target.complete();
     }
   }
-
- 
 
   async subscribedPublisher(publisher_id: number) {
     if (!this.verifySubscribe(publisher_id)) {

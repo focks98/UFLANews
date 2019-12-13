@@ -55,8 +55,12 @@ export class PublisherPage implements OnInit {
 
   async doRefresh(event: any) {
     try {
-        this.publisherId = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
-        this.selectedPublisher = await this.publisherService.searchById(this.publisherId);
+      this.listSubscribes = await this.searchService.getSubscribesUser(this.user.id);
+
+      this.arraySubscribes = []
+      for (let index = 0; index < this.listSubscribes.length; index++) {
+        await this.arraySubscribes.push(this.listSubscribes[index].id_publisher);
+      }
     } finally {
       event.target.complete();
     }
@@ -66,21 +70,17 @@ export class PublisherPage implements OnInit {
     if (!this.verifySubscribe()) {
       this.subscribeAlert();
       let subscribe = new SubscribedPublisherModel(null, this.user.id, this.selectedPublisher.id);
-      console.log("USER.ID: " + this.user.id);
-      console.log("SELECTEDPUBLISHER.ID: " + this.selectedPublisher.id);
       await this.searchService.postSubscribedPublisher(subscribe);
     } else {
       this.unsubscribeAlert();
-      console.log("USER.ID: " + this.user.id);
-      console.log("SELECTEDPUBLISHER.ID: " + this.selectedPublisher.id);
       this.subscribeId = this.verifyId();
-      await this.searchService.delete(this.selectedPublisher.id);
+      await this.searchService.delete(this.subscribeId);
     }
   }
 
   verifyId() {
     for (let index = 0; index < this.listSubscribes.length; index++) {
-      if(this.arraySubscribes[index] === this.selectedPublisher.id) {
+      if (this.arraySubscribes[index] === this.selectedPublisher.id) {
         return this.subscribeId = this.listSubscribes[index].id;
       }
     }

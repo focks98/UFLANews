@@ -25,6 +25,21 @@ export class UserService {
     return options;
   }
 
+  async getAllUsers() {
+    const options = await this.getHttpOptions();
+
+    return this.http.get(`${API_URL}/users`, options).map(
+      (users: UserModel[]) => {
+        return users.map(
+          (user: UserModel) => {
+            return new UserModel(
+              user.id, user.name, user.email);
+          }
+        )
+      }
+    ).toPromise();
+  }
+
   async getUserByEmail(email: string) {
     const options = await this.getHttpOptions();
 

@@ -71,7 +71,7 @@ export class NewsService {
         return itens.map(
           (item: CommentsModel) => {
             return new CommentsModel(
-              item.id, item.id_news, item.id_user, item.publishedAt, item.content);
+              item.id, item.id_news, item.id_user, item.name_user, item.publishedAt, item.content);
           }
         )
       }
@@ -86,7 +86,7 @@ export class NewsService {
     return this.http.post(`${API_URL}/comments`, comment, options).map(
       (item: CommentsModel) => {
         return new CommentsModel(
-          item.id, item.id_news, item.id_user, item.publishedAt,
+          item.id, item.id_news, item.id_user, item.name_user, item.publishedAt,
           item.content);
       }
     ).toPromise();
@@ -101,7 +101,7 @@ export class NewsService {
     return this.http.delete(`${API_URL}/comments/${id_comment}`,  options).map(
       (item: CommentsModel) => {
         return new CommentsModel(
-          item.id, item.id_news, item.id_user, item.publishedAt,
+          item.id, item.id_news, item.id_user, item.name_user, item.publishedAt,
           item.content);
       }
     ).toPromise();
@@ -116,7 +116,7 @@ export class NewsService {
     return this.http.put(`${API_URL}/comments/${comment.id}`, comment, options).map(
       (item: CommentsModel) => {
         return new CommentsModel(
-          item.id, item.id_news, item.id_user, item.publishedAt,
+          item.id, item.id_news, item.id_user, item.name_user, item.publishedAt,
           item.content);
       }
     ).toPromise();

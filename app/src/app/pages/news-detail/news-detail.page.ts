@@ -153,6 +153,7 @@ export class NewsDetailPage implements OnInit {
     await this.newsService.deleteComment(id_comment);
     this.commentsNews = await this.newsService.getAllCommentsNews(this.newsId);
     this.currentNews.comments -= 1;
+    this.currentNews = await this.newsService.update(this.currentNews);
   }
 
   async sendComment(id_news: number) {
@@ -165,16 +166,16 @@ export class NewsDetailPage implements OnInit {
       let now = new Date();
 
       let comment = new CommentsModel(
-        null, id_news, this.user.id, now, this.commentUser);
+        null, id_news, this.user.id, this.user.name, now, this.commentUser);
 
       await this.newsService.postComment(comment);
       this.commentUser = ''
       this.commentsNews = await this.newsService.getAllCommentsNews(this.newsId);
       this.currentNews.comments += 1;
+      this.currentNews = await this.newsService.update(this.currentNews);
     }
     else {
       this.updateComment(this.commentWillEdit);
     }
-
   }
 }

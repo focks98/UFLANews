@@ -45,9 +45,13 @@ export class NewsPage {
   }
 
   async doRefresh(event: any) {
-    console.log('chamei refresh')
     try {
       this.lstNews = await this.newsService.getAll();
+      this.lstLikes = await this.newsService.getLikesUser(this.user.id);
+      this.arrayLikes = []
+      for (let index = 0; index < this.lstLikes.length; index++) {
+        await this.arrayLikes.push(this.lstLikes[index].id_news);
+      }
     } finally {
       event.target.complete();
     }

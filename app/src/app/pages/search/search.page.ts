@@ -43,12 +43,15 @@ export class SearchPage implements OnInit {
     for (let index = 0; index < this.listSubscribes.length; index++) {
       await this.arraySubscribes.push(this.listSubscribes[index].id_publisher);
     }
-
   }
 
   async doRefresh(event: any) {
     try {
-      this.listPublishers = await this.publisherService.getAll();
+      this.listSubscribes = await this.publisherService.getSubscribesUser(this.user.id);
+      this.arraySubscribes = []
+      for (let index = 0; index < this.listSubscribes.length; index++) {
+        await this.arraySubscribes.push(this.listSubscribes[index].id_publisher);
+      }
     } finally {
       event.target.complete();
     }
@@ -70,8 +73,6 @@ export class SearchPage implements OnInit {
     }
 
     this.listPublishers = await this.publisherService.getAll();
-
-
   }
 
   verifyId(publisher_id: number) {

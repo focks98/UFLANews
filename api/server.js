@@ -43,10 +43,10 @@ server.post('/auth/register', (req, res) => {
     return
   }
 
-fs.readFile("./users.json", (err, data) => {  
+  fs.readFile("./users.json", (err, data) => {  
     if (err) {
       const status = 401
-      const message = err
+      const message = e
       res.status(status).json({status, message})
       return
     };
@@ -67,9 +67,9 @@ fs.readFile("./users.json", (err, data) => {
           return
         }
     });
-});
+  });
 
-// Create token for new user
+  // Create token for new user
   const access_token = createToken({email, password})
   console.log("Access Token:" + access_token);
   res.status(200).json({access_token})
